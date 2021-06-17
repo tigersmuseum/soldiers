@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<project name="Soldiers Database" default="database" basedir=".">
+
+	<description>
+		SOLDIERS - Soldiers of the Hampshire Regiment.
+	</description>
+
+	<property file="ant.properties"/>
+
+	<path id="derby.path">
+		<pathelement location="${DERBY_HOME}\lib\derby.jar"/>
+		<pathelement location="${DERBY_HOME}\lib\derbyclient.jar"/>
+	</path>
+
+	<target name="database">
+	<sql src="soldiers.sql" driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+
+	<target name="import-person">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+		(NULL, 'PERSON', 'TID,SURNAME,INITIALS,FORENAMES,BIRTH,DEATH,BORNAFTER,BORNBEFORE,DIEDAFTER,DIEDBEFORE', null, 'D:\Tigers\database\person.csv', null, null, null, 0)
+		]]>
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+
+	<target name="import-service">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+		(NULL, 'SERVICE', 'TID,NUM,RANK,RANK_ABBREV,RANK_QUALIFIER,REGIMENT,AFTER,BEFORE,UNIT', null, 'D:\Tigers\database\service.csv', null, null, null, 0)
+		]]>
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+
+	<target name="import-rank">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+		(NULL, 'RANK', 'ABBREV,NAME,NATO_CODE,ORDINAL', null, '${data-common}/rank.csv', null, null, null, 0)
+		]]>
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+	
+
+	<target name="export">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		CALL SYSCS_UTIL.SYSCS_EXPORT_QUERY
+		('select * from PERSON', '${data-local}/person.csv', null, null, null);
+		
+		CALL SYSCS_UTIL.SYSCS_EXPORT_QUERY
+		('select * from SERVICE', '${data-local}/service.csv', null, null, null);
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+
+	<target name="scratch">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		
+			select * from RANK;
+		
+		]]>
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+	
+</project>
