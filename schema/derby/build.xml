@@ -9,8 +9,9 @@
 	<property file="ant.properties"/>
 
 	<path id="derby.path">
-		<pathelement location="${DERBY_HOME}\lib\derby.jar"/>
-		<pathelement location="${DERBY_HOME}\lib\derbyclient.jar"/>
+		<pathelement location="${DERBY_HOME}/lib/derby.jar"/>
+		<pathelement location="${DERBY_HOME}/lib/derbyclient.jar"/>
+		<pathelement location="${DERBY_HOME}/lib/derbytools.jar"/>
 	</path>
 
 	<target name="database">
