@@ -3,7 +3,7 @@
 <project name="Soldiers Database" default="database" basedir=".">
 
 	<description>
-		SOLDIERS - Soldiers of the Hampshire Regiment.
+		Utilities for building the SOLDIERS database with Apache Derby.
 	</description>
 
 	<property file="ant.properties"/>
@@ -13,7 +13,9 @@
 		<pathelement location="${DERBY_HOME}/lib/derbyclient.jar"/>
 	</path>
 
-	<target name="database">
+	<target name="database" depends="create, import"/>
+
+	<target name="create">
 	<sql src="soldiers.sql" driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<classpath refid="derby.path"/>
 	</sql>		
@@ -49,6 +51,8 @@
 	</sql>		
 	</target>
 	
+	<target name="import" depends="import-rank, import-person, import-service"/>
+
 	<target name="export">
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
