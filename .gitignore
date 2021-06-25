@@ -1,3 +1,4 @@
 
 .project
 schema/derby/derby.log
+*.log
