@@ -11,7 +11,6 @@
 	<path id="derby.path">
 		<pathelement location="${DERBY_HOME}/lib/derby.jar"/>
 		<pathelement location="${DERBY_HOME}/lib/derbyclient.jar"/>
-		<pathelement location="${DERBY_HOME}/lib/derbytools.jar"/>
 	</path>
 
 	<target name="database">
@@ -24,7 +23,7 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'PERSON', 'TID,SURNAME,INITIALS,FORENAMES,BIRTH,DEATH,BORNAFTER,BORNBEFORE,DIEDAFTER,DIEDBEFORE', null, 'D:\Tigers\database\person.csv', null, null, null, 0)
+		(NULL, 'PERSON', 'SID,SURNAME,INITIALS,FORENAMES,BIRTH,DEATH,BORNAFTER,BORNBEFORE,DIEDAFTER,DIEDBEFORE', null, '${data-local}/person.csv', null, null, null, 0)
 		]]>
 		<classpath refid="derby.path"/>
 	</sql>		
@@ -34,7 +33,7 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'SERVICE', 'TID,NUM,RANK,RANK_ABBREV,RANK_QUALIFIER,REGIMENT,AFTER,BEFORE,UNIT', null, 'D:\Tigers\database\service.csv', null, null, null, 0)
+		(NULL, 'SERVICE', 'SID,NUM,RANK,RANK_ABBREV,RANK_QUALIFIER,REGIMENT,UNIT,AFTER,BEFORE,RECNO', null, '${data-local}/service.csv', null, null, null, 0)
 		]]>
 		<classpath refid="derby.path"/>
 	</sql>		
@@ -50,7 +49,6 @@
 	</sql>		
 	</target>
 	
-
 	<target name="export">
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
@@ -59,15 +57,17 @@
 		
 		CALL SYSCS_UTIL.SYSCS_EXPORT_QUERY
 		('select * from SERVICE', '${data-local}/service.csv', null, null, null);
+		]]>
 		<classpath refid="derby.path"/>
 	</sql>		
 	</target>
 
+		
 	<target name="scratch">
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		
-			select * from RANK;
+			select count(*) from PERSON;
 		
 		]]>
 		<classpath refid="derby.path"/>

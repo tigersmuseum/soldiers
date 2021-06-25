@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Jun 25 10:45:44 BST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017a-428f-9795-00000f34ed30 
+on database directory J:\Soldiers\TIGERS with class loader AntClassLoader[J:\Soldiers\db-derby-10.14.2.0-bin\lib\derby.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_cs.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_de_DE.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_es.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_fr.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_hu.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_it.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_ja_JP.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_ko_KR.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_pl.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_pt_BR.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_ru.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_zh_CN.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyLocale_zh_TW.jar;J:\Soldiers\db-derby-10.14.2.0-bin\lib\derbyclient.jar] 
+Loaded from file:/J:/Soldiers/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=15.0.2+7-27
+user.dir=C:\Users\Archive\Documents\GitHub\soldiers\schema\derby
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
