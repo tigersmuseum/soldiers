@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/soldiers/" targetNamespace="http://www.example.org/soldiers/">
+    <element name="list" type="tns:list"></element>
+    
+    <complexType name="list">
+    	<sequence maxOccurs="unbounded" minOccurs="1">
+    		<element name="person" type="tns:person"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="person"></complexType>
+</schema>
