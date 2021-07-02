@@ -12,18 +12,18 @@
 <xsd:annotation>
 <xsd:appinfo>
 <od:index index-name="NUM" index-key="NUM " primary="no" unique="no" clustered="no" order="asc"/>
-<od:index index-name="PERSONSERVICE" index-key="TID " primary="no" unique="no" clustered="no" order="asc"/>
-<od:index index-name="PrimaryKey" index-key="TID RANK_ABBREV RECNO " primary="yes" unique="yes" clustered="no" order="asc asc asc"/>
+<od:index index-name="PERSONSERVICE" index-key="SID " primary="no" unique="no" clustered="no" order="asc"/>
+<od:index index-name="PrimaryKey" index-key="SID RANK_ABBREV RECNO " primary="yes" unique="yes" clustered="no" order="asc asc asc"/>
 <od:index index-name="RANKSERVICE" index-key="RANK_ABBREV " primary="no" unique="no" clustered="no" order="asc"/>
-<od:index index-name="TID" index-key="TID " primary="no" unique="no" clustered="no" order="asc"/>
+<od:index index-name="TID" index-key="SID " primary="no" unique="no" clustered="no" order="asc"/>
 <od:tableProperty name="PublishToWeb" type="2" value="1"/>
 <od:tableProperty name="GUID" type="9" value="4CAhiWaQ10Sv0wNasSyahw==
 "/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAADgICGJZpDXRK/TA1qxLJqHAAAAAOk8szMwpuVAAAAAAAAAAABTAEUA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAADgICGJZpDXRK/TA1qxLJqHAAAAAAzuastuq+VAAAAAAAAAAABTAEUA
 UgBWAEkAQwBFAAAAAAAAANkFK/ouxkhOj5wFPvTc4ScHAAAA4CAhiWaQ10Sv0wNa
-sSyah1QASQBEAAAAAAAAAD9J/kzN1GZFs2QCYon03xUHAAAA4CAhiWaQ10Sv0wNa
+sSyah1MASQBEAAAAAAAAAD9J/kzN1GZFs2QCYon03xUHAAAA4CAhiWaQ10Sv0wNa
 sSyah04AVQBNAAAAAAAAALxB45nomktHvsFn+ez/4I0HAAAA4CAhiWaQ10Sv0wNa
 sSyah1IAQQBOAEsAAAAAAAAA77XMl3t0Y0GaX1G4n/NGDgcAAADgICGJZpDXRK/T
 A1qxLJqHUgBBAE4ASwBfAEEAQgBCAFIARQBWAAAAAAAAAEWzRzn/d/RIpoY3JZYB
@@ -55,7 +55,7 @@ AAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 </xsd:annotation>
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element name="TID" minOccurs="1" od:jetType="longinteger" od:sqlSType="int" od:nonNullable="yes" type="xsd:int">
+<xsd:element name="SID" minOccurs="1" od:jetType="longinteger" od:sqlSType="int" od:nonNullable="yes" type="xsd:int">
 <xsd:annotation>
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="2QUr+i7GSE6PnAU+9NzhJw==
