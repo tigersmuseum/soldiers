@@ -1,12 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/soldiers/" targetNamespace="http://www.example.org/soldiers/">
-    <element name="list" type="tns:list"></element>
-    
-    <complexType name="list">
-    	<sequence maxOccurs="unbounded" minOccurs="1">
-    		<element name="person" type="tns:person"></element>
-    	</sequence>
-    </complexType>
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://royalhampshireregiment.org/soldiers" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://royalhampshireregiment.org/soldiers" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <complexType name="person"></complexType>
-</schema>
+  <xs:element name="service" type="tns:serviceType"></xs:element>
+
+    <xs:element name="record" type="tns:recordType"></xs:element>
+    
+    <xs:complexType name="serviceType">
+    	<xs:sequence>
+    		<xs:element ref="tns:record" maxOccurs="unbounded" minOccurs="1"></xs:element>
+    	</xs:sequence>
+    </xs:complexType>
+
+  <xs:complexType name="recordType">
+  	<xs:attribute name="number" type="xs:string"></xs:attribute>
+  	<xs:attribute name="rank" type="xs:string"></xs:attribute>
+  	<xs:attribute name="regiment" type="xs:string"></xs:attribute>
+  	<xs:attribute name="unit" type="xs:string"></xs:attribute>
+  	<xs:attribute name="after" type="xs:date"></xs:attribute>
+  	<xs:attribute name="before" type="xs:date"></xs:attribute>
+  </xs:complexType>
+
+
+  <xs:element name="person" type="tns:personType"></xs:element>
+
+
+  <xs:element name="list" type="tns:listType"></xs:element>
+
+  <xs:complexType name="listType">
+  	<xs:sequence>
+  		<xs:element name="person" type="tns:personType" maxOccurs="unbounded" minOccurs="1"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="keyDateType">
+  	<xs:attribute name="date" type="xs:date"></xs:attribute>
+  	<xs:attribute name="before" type="xs:date"></xs:attribute>
+  	<xs:attribute name="after" type="xs:date"></xs:attribute>
+  </xs:complexType>
+
+
+  <xs:complexType name="personType">
+    	<xs:all>
+    		<xs:element name="surname" type="xs:string" maxOccurs="1"
+    			minOccurs="1">
+    		</xs:element>
+    		<xs:element name="initials" type="xs:string" maxOccurs="1"
+    			minOccurs="0">
+    		</xs:element>
+    		<xs:element name="forenames" type="xs:string" maxOccurs="1"
+    			minOccurs="0">
+    		</xs:element>
+    		<xs:element name="service" type="tns:serviceType"
+    			maxOccurs="1" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="birth" type="tns:keyDateType"
+    			maxOccurs="1" minOccurs="0">
+    		</xs:element>
+    		<xs:element name="death" type="tns:keyDateType" maxOccurs="1" minOccurs="0"></xs:element>
+    	</xs:all>
+  </xs:complexType>
+
+</xs:schema>
