@@ -40,24 +40,27 @@
 
 
   <xs:complexType name="personType">
-    	<xs:all>
-    		<xs:element name="surname" type="xs:string" maxOccurs="1"
-    			minOccurs="1">
-    		</xs:element>
-    		<xs:element name="initials" type="xs:string" maxOccurs="1"
-    			minOccurs="0">
-    		</xs:element>
-    		<xs:element name="forenames" type="xs:string" maxOccurs="1"
-    			minOccurs="0">
-    		</xs:element>
-    		<xs:element name="service" type="tns:serviceType"
-    			maxOccurs="1" minOccurs="0">
-    		</xs:element>
-    		<xs:element name="birth" type="tns:keyDateType"
-    			maxOccurs="1" minOccurs="0">
-    		</xs:element>
-    		<xs:element name="death" type="tns:keyDateType" maxOccurs="1" minOccurs="0"></xs:element>
-    	</xs:all>
+  	<xs:all>
+  		<xs:element name="surname" type="xs:string" maxOccurs="1"
+  			minOccurs="1">
+  		</xs:element>
+  		<xs:element name="initials" type="xs:string" maxOccurs="1"
+  			minOccurs="0">
+  		</xs:element>
+  		<xs:element name="forenames" type="xs:string" maxOccurs="1"
+  			minOccurs="0">
+  		</xs:element>
+  		<xs:element name="service" type="tns:serviceType"
+  			maxOccurs="1" minOccurs="0">
+  		</xs:element>
+  		<xs:element name="birth" type="tns:keyDateType" maxOccurs="1"
+  			minOccurs="0">
+  		</xs:element>
+  		<xs:element name="death" type="tns:keyDateType" maxOccurs="1"
+  			minOccurs="0">
+  		</xs:element>
+  	</xs:all>
+  	<xs:attribute name="sid" type="xs:int"></xs:attribute>
   </xs:complexType>
 
 </xs:schema>
