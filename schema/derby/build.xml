@@ -6,6 +6,7 @@
 		Utilities for building the SOLDIERS database with Apache Derby.
 	</description>
 
+	<!-- If "ant.properties" doesn't exist, copy "../templates/ant.properties" to this folder and edit appropriately. -->
 	<property file="ant.properties"/>
 
 	<path id="derby.path">
