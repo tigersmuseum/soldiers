@@ -3,3 +3,4 @@
 schema/derby/derby.log
 *.log
 schema/derby/ant.properties
+*.properties
