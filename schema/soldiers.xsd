@@ -59,8 +59,23 @@
   		<xs:element name="death" type="tns:keyDateType" maxOccurs="1"
   			minOccurs="0">
   		</xs:element>
+  		<xs:element name="notes" type="tns:notesType" maxOccurs="1" minOccurs="0"></xs:element>
   	</xs:all>
   	<xs:attribute name="sid" type="xs:int"></xs:attribute>
   </xs:complexType>
 
+
+  <xs:complexType name="notesType">
+  	<xs:sequence>
+  		<xs:element name="note" type="tns:noteType" maxOccurs="unbounded" minOccurs="1"></xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="noteType">
+  	<xs:sequence>
+  		<xs:any></xs:any>
+  	</xs:sequence>
+  	<xs:attribute name="source" type="xs:string"></xs:attribute>
+  	<xs:attribute name="date" type="xs:date"></xs:attribute>
+  </xs:complexType>
 </xs:schema>
