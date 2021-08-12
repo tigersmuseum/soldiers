@@ -36,7 +36,7 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'SERVICE', 'SID,NUM,RANK,RANK_ABBREV,RANK_QUALIFIER,REGIMENT,UNIT,AFTER,BEFORE,RECNO', null, '${data-local}/service.csv', null, null, null, 0)
+		(NULL, 'SERVICE', 'SID,NUM,RANK,RANK_ABBREV,RANK_QUALIFIER,REGIMENT,UNIT,AFTER,BEFORE', null, '${data-local}/service.csv', null, null, null, 0)
 		]]>
 		<classpath refid="derby.path"/>
 	</sql>		
