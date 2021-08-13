@@ -13,7 +13,7 @@
 <xsd:appinfo>
 <od:index index-name="NUM" index-key="NUM " primary="no" unique="no" clustered="no" order="asc"/>
 <od:index index-name="PERSONSERVICE" index-key="SID " primary="no" unique="no" clustered="no" order="asc"/>
-<od:index index-name="PrimaryKey" index-key="SID RANK_ABBREV REGIMENT RECNO " primary="yes" unique="yes" clustered="no" order="asc asc asc asc"/>
+<od:index index-name="PrimaryKey" index-key="SID NUM RANK_ABBREV REGIMENT BEFORE " primary="yes" unique="yes" clustered="no" order="asc asc asc asc asc"/>
 <od:index index-name="RANKSERVICE" index-key="RANK_ABBREV " primary="no" unique="no" clustered="no" order="asc"/>
 <od:index index-name="TID" index-key="SID " primary="no" unique="no" clustered="no" order="asc"/>
 <od:tableProperty name="PublishToWeb" type="2" value="1"/>
@@ -21,7 +21,7 @@
 "/>
 <od:tableProperty name="Orientation" type="2" value="0"/>
 <od:tableProperty name="OrderByOn" type="1" value="0"/>
-<od:tableProperty name="NameMap" type="11" value="CswOVQAAAADgICGJZpDXRK/TA1qxLJqHAAAAAMmM8hYQruVAAAAAAAAAAABTAEUA
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAADgICGJZpDXRK/TA1qxLJqHAAAAAJsp6cCtsOVAAAAAAAAAAABTAEUA
 UgBWAEkAQwBFAAAAAAAAANkFK/ouxkhOj5wFPvTc4ScHAAAA4CAhiWaQ10Sv0wNa
 sSyah1MASQBEAAAAAAAAAD9J/kzN1GZFs2QCYon03xUHAAAA4CAhiWaQ10Sv0wNa
 sSyah04AVQBNAAAAAAAAALxB45nomktHvsFn+ez/4I0HAAAA4CAhiWaQ10Sv0wNa
@@ -32,9 +32,8 @@ UgAAAAAAAADYKCxnB9bVQo30coIUlVvpBwAAAOAgIYlmkNdEr9MDWrEsmodSAEUA
 RwBJAE0ARQBOAFQAAAAAAAAAqnE2DNAZCECEEp/Jmv+KnQcAAADgICGJZpDXRK/T
 A1qxLJqHVQBOAEkAVAAAAAAAAABxiEJZGMFVQ73VPa59HzMTBwAAAOAgIYlmkNdE
 r9MDWrEsmodBAEYAVABFAFIAAAAAAAAA6bqUfBHyqkSvKwcMonQfQQcAAADgICGJ
-ZpDXRK/TA1qxLJqHQgBFAEYATwBSAEUAAAAAAAAA/UPxuMKBsE+OzPespCDH/wcA
-AADgICGJZpDXRK/TA1qxLJqHUgBFAEMATgBPAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
+ZpDXRK/TA1qxLJqHQgBFAEYATwBSAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwA
+AAAFAAAAAAAAAAAAAAAAAAAAAAA=
 "/>
 <od:tableProperty name="DefaultView" type="2" value="2"/>
 <od:tableProperty name="DisplayViewsOnSharePointSite" type="2" value="1"/>
@@ -74,7 +73,7 @@ AAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 </xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element name="NUM" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+<xsd:element name="NUM" minOccurs="1" od:jetType="text" od:sqlSType="nvarchar" od:nonNullable="yes">
 <xsd:annotation>
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="P0n+TM3UZkWzZAJiifTfFQ==
@@ -82,7 +81,7 @@ AAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 <od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
-<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="1"/>
 <od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
 <od:fieldProperty name="DisplayControl" type="3" value="109"/>
 <od:fieldProperty name="IMEMode" type="2" value="0"/>
@@ -249,7 +248,7 @@ AAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 </xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element name="BEFORE" minOccurs="0" od:jetType="datetime" od:sqlSType="datetime" type="xsd:dateTime">
+<xsd:element name="BEFORE" minOccurs="1" od:jetType="datetime" od:sqlSType="datetime" od:nonNullable="yes" type="xsd:dateTime">
 <xsd:annotation>
 <xsd:appinfo>
 <od:fieldProperty name="GUID" type="9" value="6bqUfBHyqkSvKwcMonQfQQ==
@@ -257,31 +256,12 @@ AAAMAAAABQAAAAAAAAAAAAAAAAAAAAAA
 <od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
 <od:fieldProperty name="ColumnOrder" type="3" value="0"/>
 <od:fieldProperty name="ColumnHidden" type="1" value="0"/>
-<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="1"/>
 <od:fieldProperty name="IMEMode" type="2" value="0"/>
 <od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
 <od:fieldProperty name="TextAlign" type="2" value="0"/>
 <od:fieldProperty name="AggregateType" type="4" value="-1"/>
 <od:fieldProperty name="ShowDatePicker" type="3" value="1"/>
-<od:fieldProperty name="ResultType" type="2" value="0"/>
-<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
-</xsd:appinfo>
-</xsd:annotation>
-</xsd:element>
-<xsd:element name="RECNO" minOccurs="1" od:jetType="longinteger" od:sqlSType="int" od:nonNullable="yes" type="xsd:int">
-<xsd:annotation>
-<xsd:appinfo>
-<od:fieldProperty name="GUID" type="9" value="/UPxuMKBsE+OzPespCDH/w==
-"/>
-<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
-<od:fieldProperty name="ColumnOrder" type="3" value="0"/>
-<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
-<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
-<od:fieldProperty name="DefaultValue" type="12" value="0"/>
-<od:fieldProperty name="Required" type="1" value="1"/>
-<od:fieldProperty name="DisplayControl" type="3" value="109"/>
-<od:fieldProperty name="TextAlign" type="2" value="0"/>
-<od:fieldProperty name="AggregateType" type="4" value="-1"/>
 <od:fieldProperty name="ResultType" type="2" value="0"/>
 <od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
 </xsd:appinfo>
