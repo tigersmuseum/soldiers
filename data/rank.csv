@@ -22,9 +22,11 @@
 "Sig","Signaller",,1
 "Tpr","Trooper",,1
 "Tptr","Trumpeter",,1
+"Hos App","Hospital Apprentice",,1
 "Pte","Private",,1
 "Sgt","Sergeant",,4
 "Sgt Maj","Sergeant Major",,6
+"Drum Maj","Drum Major",,6
 "Cpl","Corporal",,3
 "2Cpl","Second Corporal",,2
 "L/Cpl","Lance Corporal",,2
@@ -39,9 +41,13 @@
 "CSM","Company Sergeant Major",,6
 "CQMS","Company Quartermaster Sergeant",,6
 "Lt","Lieutenant",,10
+"Asst Surg","Assistant Surgeon",,10
 "2Lt","Second Lieutenant",,9
 "Capt","Captain",,11
+"Adjt","Adjutant",,11
+"QM","Quartermaster",,11
 "Maj","Major",,12
+"Surg","Surgeon",,12
 "Lt Col","Lieutenant Colonel",,13
 "Col","Colonel",,14
 "Brig","Brigadier",,15
