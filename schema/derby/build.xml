@@ -72,7 +72,7 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		
-			select count(*) from PERSON;
+			insert into RANK (ABBREV, NAME, ORDINAL) VALUES('Sub', 'Subaltern', 10);
 		
 		]]>
 		<classpath refid="derby.path"/>
