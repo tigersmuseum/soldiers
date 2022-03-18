@@ -28,8 +28,11 @@
 
   <xs:complexType name="listType">
   	<xs:sequence>
-  		<xs:element name="person" type="tns:personType" maxOccurs="unbounded" minOccurs="1"></xs:element>
+  		<xs:element name="person" type="tns:personType"
+  			maxOccurs="unbounded" minOccurs="1">
+  		</xs:element>
   	</xs:sequence>
+  	<xs:attribute name="source" type="xs:string" use="optional"></xs:attribute>
   </xs:complexType>
 
   <xs:complexType name="keyDateType">
