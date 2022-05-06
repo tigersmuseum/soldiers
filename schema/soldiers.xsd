@@ -83,7 +83,7 @@
   		<xs:annotation>
   			<xs:documentation>
   				The source of the information noted. This is expected
-  				to be a general label for the rigin of the record, and
+  				to be a general label for the origin of the record, and
   				can be suported with specific details in the
   				@sourceref attribute.
   			</xs:documentation>
@@ -100,14 +100,14 @@
   	<xs:attribute name="date" type="xs:date">
   		<xs:annotation>
   			<xs:documentation>
-  				An optional date on the information noted - to allow
+  				An optional date on the information noted. The purpose is to allow
   				chronological sorting.
   			</xs:documentation>
   		</xs:annotation>
   	</xs:attribute>
   	<xs:attribute name="type" type="xs:string" use="optional">
   		<xs:annotation>
-  			<xs:documentation>An option type attribute on the information. To allow notes to be collected by type. This specification does not prescribe a set of types, but some conventional use should be adopted.</xs:documentation>
+  			<xs:documentation>An option type attribute on the information. To allow notes to be collected by type. This schema does not prescribe a set of types, but some conventional use should be adopted.</xs:documentation>
   		</xs:annotation></xs:attribute>
   </xs:complexType>
 </xs:schema>
