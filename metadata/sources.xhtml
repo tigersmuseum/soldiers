@@ -41,18 +41,26 @@ be collated to pull together biographical data.
 <dd>Volunteer research into the 1st Battalion "Old Contemptibles"</dd>
 </dl>
 
-<article about="http://dbpedia.org/resource/The_National_Archives_(United_Kingdom)">
-<h3>The National Archives</h3>
-<p>The National Archives (TNA), The National Archives of the UK (TNA)</p>
-</article>
+<p>
+There are 3 attributes on the Soldiers XML <em>note</em> element that relate to source:
+<dl>
+<dt>sourceref</dt><dd>A formal source reference or identifier that should be used when the source is a particular historical document.</dd>
+<dt>source</dt><dd>A name for the source. </dd>
+<dt>type</dt><dd>The type of the source material. This offers a way of grouping similar records from different resources together. For example, "medals" or "medical".</dd>
+</dl>
+</p>
 
+<p>
+Ideally, we would like to capture enough information in a Soldiers XML <em>note</em> element to allow it to be traced back to a specific historical document.
+The <em>sourceref</em> attribute allows this provided that it is available and can be sensibly de-referenced. The <em>source</em> attribute should give the
+context to uniquely identify the referenced document.
+</p>
 
-<article about="https://discovery.nationalarchives.gov.uk/details/r/C544716">
-<h3>18th General Hospital</h3>
-<p>No. 18 General Hospital, Camiers, Book No. 29, Shelf 18</p>
-<p>Camiers</p>
-<p><span>28/08/1918</span> <span>19/09/1918</span></p>
-</article>
+<p>
+It may be that links to historical records are lost because the source to the creator of the Soldiers XML data is some intermediary that hasn't kept a detailed record of
+its own sources. The intermediary might be able to generate its own reference if it maintains a database of the records it generates, but this isn't to be expected. Instead,
+we will have a named source for a note, but without a source reference. 
+</p>
 
 </body>
 </html>
