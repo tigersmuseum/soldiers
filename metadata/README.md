@@ -1,1 +1,1 @@
-Extra information that makes the contents of the database more useful. For example, **sources**.
+Extra information that makes the contents of the database more useful. For example, [sources](sources.md).
