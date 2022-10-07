@@ -3,6 +3,7 @@
 
 <xsl:import href="report-header.xsl"/>
 <xsl:import href="report-medical.xsl"/>
+<xsl:import href="report-cwgc.xsl"/>
 
 <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
@@ -19,7 +20,7 @@
 	</style>
 </head>
 <body>
-	<xsl:apply-templates select="//soldiers:person">
+	<xsl:apply-templates select="//soldiers:person[starts-with(soldiers:surname,'B')]">
 		<xsl:sort select="soldiers:surname"/>
 		<xsl:sort select="soldiers:initials"/>
 	</xsl:apply-templates>
@@ -34,6 +35,8 @@
 		<h3>Medical Records</h3>
 		<xsl:apply-templates select="soldiers:note" mode="medical"/>
 		
+		<xsl:apply-templates select="soldiers:note" mode="cwgc"/>
+
 		<footer><p><xsl:text>WINHR: SID/</xsl:text><xsl:value-of select="@sid"/></p></footer>
 	</article>
 	
