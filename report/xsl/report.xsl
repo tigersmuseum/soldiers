@@ -20,7 +20,10 @@
 	</style>
 </head>
 <body>
+<!-- 
 	<xsl:apply-templates select="//soldiers:person[starts-with(soldiers:surname,'B')]">
+ -->
+	<xsl:apply-templates select="//soldiers:person">
 		<xsl:sort select="soldiers:surname"/>
 		<xsl:sort select="soldiers:initials"/>
 	</xsl:apply-templates>
@@ -32,8 +35,7 @@
 	<article>
 		<xsl:apply-templates select="." mode="header"/>
 		
-		<h3>Medical Records</h3>
-		<xsl:apply-templates select="soldiers:note" mode="medical"/>
+		<xsl:apply-templates select="." mode="medical"/>
 		
 		<xsl:apply-templates select="soldiers:note" mode="cwgc"/>
 

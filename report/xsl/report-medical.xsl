@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soldiers="http://royalhampshireregiment.org/soldiers" version="1.0">
 
+<xsl:template match="soldiers:person" mode="medical">
+	<h3>Medical Records</h3>
+	<xsl:apply-templates select="soldiers:note" mode="medical"/>
+</xsl:template>
+
 
 <xsl:template match="soldiers:note" mode="medical">
 <h4>
@@ -37,6 +42,10 @@
 <p><xsl:value-of select="soldiers:disease"/>
 <xsl:text> [</xsl:text><xsl:value-of select="concat(@sourceref, ', no ', soldiers:admission/@number)"/><xsl:text> - </xsl:text><xsl:value-of select="@unit"/><xsl:text>]</xsl:text>
 </p>
+</xsl:template>
+
+<xsl:template match="soldiers:note[@source = 'War Office Casualty List']" mode="medicaltext">
+<p><xsl:value-of select="."/></p>
 </xsl:template>
 
 <xsl:template match="soldiers:note" mode="medicaltext">
