@@ -29,6 +29,8 @@
 
 <xsl:template match="table:table-row">
 <row>
+	<xsl:attribute name="number"><xsl:value-of select="position() + sum(preceding-sibling::table:table-row/@table:number-rows-repeated) - count(preceding-sibling::table:table-row/@table:number-rows-repeated)"/></xsl:attribute>
+	<xsl:apply-templates select="@table:number-rows-repeated"/>
 	<xsl:apply-templates select="table:table-cell"/>
 </row>
 </xsl:template>
@@ -47,5 +49,9 @@
 </xsl:template>
 
 <xsl:template match="@office:value-type"/>
+
+<xsl:template match="@table:number-rows-repeated">
+	<xsl:attribute name="span"><xsl:value-of select="."/></xsl:attribute>
+</xsl:template>
 
 </xsl:stylesheet> 
