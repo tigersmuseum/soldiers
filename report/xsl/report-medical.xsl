@@ -2,8 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soldiers="http://royalhampshireregiment.org/soldiers" version="1.0">
 
 <xsl:template match="soldiers:person" mode="medical">
-	<h3>Medical Records</h3>
-	<xsl:apply-templates select="soldiers:note" mode="medical"/>
+	<xsl:if test="soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]">
+		<h3>Medical Records</h3>
+		<xsl:apply-templates select="soldiers:note" mode="medical"/>
+	</xsl:if>
 </xsl:template>
 
 
