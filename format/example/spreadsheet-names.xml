@@ -1,0 +1,1620 @@
+<?xml version="1.0" encoding="UTF-8"?><spreadsheet>
+        
+    <sheet name="CasualtySearch_28_10_2022_19">
+                
+        
+        <row number="2">
+                        
+            <cell index="1" col="Id">2758664</cell>
+                        
+            <cell index="2" col="Surname">LEEMAN</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">L G</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1920-03-30T00:00:00" col="DateOfDeath">30/03/1920</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Service Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">4th M.T. Depot</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'EMT/62736'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 140.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="3">
+                        
+            <cell index="1" col="Id">2758644</cell>
+                        
+            <cell index="2" col="Surname">ALLAND</cell>
+                        
+            <cell index="3" col="Forename">JOHN THEODORE</cell>
+                        
+            <cell index="4" col="Initials">J T</cell>
+                        
+            <cell index="5" col="AgeAtDeath">40</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-05-05T00:00:00" col="DateOfDeath">05/05/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Fitter Staff Serjeant</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'318068'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">II. 97.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Robert and Margaret Alland; husband of Sarah Ann Alland, of 36, Oxford Rd., Canonbury, London. Born in London.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="4">
+                        
+            <cell index="1" col="Id">2758645</cell>
+                        
+            <cell index="2" col="Surname">BLAKE</cell>
+                        
+            <cell index="3" col="Forename">ZACHARIAH</cell>
+                        
+            <cell index="4" col="Initials">Z</cell>
+                        
+            <cell index="5" col="AgeAtDeath">21</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-11-06T00:00:00" col="DateOfDeath">06/11/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'4055'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 6 NP.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of John and Jane Blake, of Barr'd Islands, Fogo District, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="5">
+                        
+            <cell index="1" col="Id">2758646</cell>
+                        
+            <cell index="2" col="Surname">CEPHAS</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">27</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-03-10T00:00:00" col="DateOfDeath">10/03/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">The Loyal North Lancashire Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'56502'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">H.I. 115.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Mrs. Rebecca Carey, of Mansions Village, St. Kitts, British West Indies.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="6">
+                        
+            <cell index="1" col="Id">2758647</cell>
+                        
+            <cell index="2" col="Surname">COX</cell>
+                        
+            <cell index="3" col="Forename">PHILIP WILLIAM</cell>
+                        
+            <cell index="4" col="Initials">P W</cell>
+                        
+            <cell index="5" col="AgeAtDeath">34</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-03-05T00:00:00" col="DateOfDeath">05/03/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Border Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">3rd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'51381'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">H.I. 114.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Mrs. Fannie Cox; husband of Lillian Cox, of 46, West 132nd St., New York, U.S.A.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="7">
+                        
+            <cell index="1" col="Id">2758648</cell>
+                        
+            <cell index="2" col="Surname">CROWSON</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">27</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-06-14T00:00:00" col="DateOfDeath">14/06/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Rifleman</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment">Labour Corps</cell>
+                        
+            <cell index="12" col="Unit">13th Kensington Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'491680'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 129.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Hyman and Leah Crowson, of 10, Holborn St., Boston, Mass, U.S.A.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="8">
+                        
+            <cell index="1" col="Id">2758650</cell>
+                        
+            <cell index="2" col="Surname">EVANS</cell>
+                        
+            <cell index="3" col="Forename">FREDERICK</cell>
+                        
+            <cell index="4" col="Initials">F</cell>
+                        
+            <cell index="5" col="AgeAtDeath">17</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1921-05-31T00:00:00" col="DateOfDeath">31/05/1921</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Boy</cell>
+                        
+            <cell index="10" col="Regiment">Hampshire Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'5485675'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">R.2. 78.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Mrs. E. M. Dymond, of 9, Polsome Place, Middlebrooks, Winchester.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="9">
+                        
+            <cell index="1" col="Id">2758651</cell>
+                        
+            <cell index="2" col="Surname">EVANS</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">35</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-02-22T00:00:00" col="DateOfDeath">22/02/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Serjeant</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">Heavy Artillery Training Centre</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'45775'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">H.I. 113.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Thomas and Mary Evans, of Gronaut, Flints.; husband of Sarah Ellen Evans.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="10">
+                        
+            <cell index="1" col="Id">2758652</cell>
+                        
+            <cell index="2" col="Surname">EYLES</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">W J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">46</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-10-20T00:00:00" col="DateOfDeath">20/10/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Hampshire Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">3rd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'15888'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">W. 80.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of William and Mary Jane Eyles; husband of Ruth Eyles, of 10, Upper Brooks, Winchester. Born at Winchester. Served in the South African War.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="11">
+                        
+            <cell index="1" col="Id">2758653</cell>
+                        
+            <cell index="2" col="Surname">FORDE</cell>
+                        
+            <cell index="3" col="Forename">FRANCIS EDWARD</cell>
+                        
+            <cell index="4" col="Initials">F E</cell>
+                        
+            <cell index="5" col="AgeAtDeath">32</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1920-02-25T00:00:00" col="DateOfDeath">25/02/1920</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Service Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">4th M.T. Depot</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'EMT/57922'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 139.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Thomas and Elizabeth Forde, of 40, Barker St., Lozells, Birmingham.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="12">
+                        
+            <cell index="1" col="Id">2758654</cell>
+                        
+            <cell index="2" col="Surname">FOWLER</cell>
+                        
+            <cell index="3" col="Forename">HARRY</cell>
+                        
+            <cell index="4" col="Initials">H</cell>
+                        
+            <cell index="5" col="AgeAtDeath">45</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-08-24T00:00:00" col="DateOfDeath">24/08/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Corporal</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment (Royal Fusiliers)</cell>
+                        
+            <cell index="11" col="SecondaryRegiment">Labour Corps</cell>
+                        
+            <cell index="12" col="Unit">1st Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'325'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. I.I. 99.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Husband of Charlotte Esther Fowler, of 11, Oakfield Crescent, Kentish Town, London.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="13">
+                        
+            <cell index="1" col="Id">2758655</cell>
+                        
+            <cell index="2" col="Surname">GILL</cell>
+                        
+            <cell index="3" col="Forename">ERNEST</cell>
+                        
+            <cell index="4" col="Initials">E</cell>
+                        
+            <cell index="5" col="AgeAtDeath">21</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-10-24T00:00:00" col="DateOfDeath">24/10/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'2655'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 4.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of George and Mary Ann Gill, of Lisbon Falls, Maine, U.S.A. Born at Harbour Grace, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="14">
+                        
+            <cell index="1" col="Id">2758658</cell>
+                        
+            <cell index="2" col="Surname">HARRIMAN</cell>
+                        
+            <cell index="3" col="Forename">WILLIAM</cell>
+                        
+            <cell index="4" col="Initials">W</cell>
+                        
+            <cell index="5" col="AgeAtDeath">22</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-01-27T00:00:00" col="DateOfDeath">27/01/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Gunner</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">180th Heavy Bty.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'37600'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">K.I. 99.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of William and Ellen Harriman. Born at Cheslyn Hay, Staffs.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="15">
+                        
+            <cell index="1" col="Id">2758659</cell>
+                        
+            <cell index="2" col="Surname">HOBBS</cell>
+                        
+            <cell index="3" col="Forename">JOHN</cell>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-12-02T00:00:00" col="DateOfDeath">02/12/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'5415'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 9.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Henry and Rosina Hobbs, of Redcliffe, Bonavista Bay, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="16">
+                        
+            <cell index="1" col="Id">2758660</cell>
+                        
+            <cell index="2" col="Surname">HOLLINGDALE</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">H R</cell>
+                        
+            <cell index="5" col="AgeAtDeath">37</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-10-03T00:00:00" col="DateOfDeath">03/10/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Serjeant</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Veterinary Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">9th Vet. Hosp. (Ramsey)</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'0724'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 130.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Henry Richard and Elizabeth Hollingdale; husband of the late Florence Mabel Hollingdale. Born at Tunbridge Wells.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="17">
+                        
+            <cell index="1" col="Id">2758661</cell>
+                        
+            <cell index="2" col="Surname">HOWES</cell>
+                        
+            <cell index="3" col="Forename">EDWARD CHARLES</cell>
+                        
+            <cell index="4" col="Initials">E C</cell>
+                        
+            <cell index="5" col="AgeAtDeath">19</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-05-30T00:00:00" col="DateOfDeath">30/05/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">22nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'683827'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. I. I. 98.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Mr. W. E. and Mrs. A. M. Howes, of 19, Barbel St., Westminster Bridge Rd., London.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="18">
+                        
+            <cell index="1" col="Id">2758662</cell>
+                        
+            <cell index="2" col="Surname">JACOBS</cell>
+                        
+            <cell index="3" col="Forename">WALTER</cell>
+                        
+            <cell index="4" col="Initials">W</cell>
+                        
+            <cell index="5" col="AgeAtDeath">24</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-10-27T00:00:00" col="DateOfDeath">27/10/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'3848'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 7.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Luke and Rebecca Jacobs, of Westport, White Bay, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="19">
+                        
+            <cell index="1" col="Id">2758663</cell>
+                        
+            <cell index="2" col="Surname">KIRBY</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J R</cell>
+                        
+            <cell index="5" col="AgeAtDeath">28</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-12-16T00:00:00" col="DateOfDeath">16/12/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Second Lieutenant</cell>
+                        
+            <cell index="10" col="Regiment">Royal Air Force</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">''</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">H.I. 96.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of John Colbourne Kirby and his wife, Mary Susannah Blake, of 173, Dowling Avenue, Toronto, Canada. B.A.Sc. (University of Toronto).</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="20">
+                        
+            <cell index="1" col="Id">2758665</cell>
+                        
+            <cell index="2" col="Surname">LEGGE</cell>
+                        
+            <cell index="3" col="Forename">MARCUS</cell>
+                        
+            <cell index="4" col="Initials">M</cell>
+                        
+            <cell index="5" col="AgeAtDeath">22</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-03-24T00:00:00" col="DateOfDeath">24/03/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Lance Corporal</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'2691'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 5.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Archibald and Emma Legge, of Heart's Content, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="21">
+                        
+            <cell index="1" col="Id">2758666</cell>
+                        
+            <cell index="2" col="Surname">LITTLE</cell>
+                        
+            <cell index="3" col="Forename">REDVERS</cell>
+                        
+            <cell index="4" col="Initials">R</cell>
+                        
+            <cell index="5" col="AgeAtDeath">18</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-11-15T00:00:00" col="DateOfDeath">15/11/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'4887'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 2.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of James and Elizabeth Little, of Musgravetown, Bonavista Bay, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="22">
+                        
+            <cell index="1" col="Id">2758668</cell>
+                        
+            <cell index="2" col="Surname">MILES</cell>
+                        
+            <cell index="3" col="Forename">AUGUSTUS</cell>
+                        
+            <cell index="4" col="Initials">A</cell>
+                        
+            <cell index="5" col="AgeAtDeath">29</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-10-01T00:00:00" col="DateOfDeath">01/10/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'4856'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 8.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Edmund and Susan Miles, of Bonavista, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="23">
+                        
+            <cell index="1" col="Id">2758669</cell>
+                        
+            <cell index="2" col="Surname">MORRIS</cell>
+                        
+            <cell index="3" col="Forename">HAROLD</cell>
+                        
+            <cell index="4" col="Initials">H</cell>
+                        
+            <cell index="5" col="AgeAtDeath">19</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-04-19T00:00:00" col="DateOfDeath">19/04/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'4131'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. I.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of William and Amelia Morris, of Seal Rocks Bay, St. George, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="24">
+                        
+            <cell index="1" col="Id">2758670</cell>
+                        
+            <cell index="2" col="Surname">OLIVER</cell>
+                        
+            <cell index="3" col="Forename">EDWARD ARTHUR</cell>
+                        
+            <cell index="4" col="Initials">E A</cell>
+                        
+            <cell index="5" col="AgeAtDeath">20</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1920-04-25T00:00:00" col="DateOfDeath">25/04/1920</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Service Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'EMT/65664'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 141.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Capt. Samuel Oliver and Susanna Oliver, of 102, Hainton Avenue, Grimsby.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="25">
+                        
+            <cell index="1" col="Id">2758671</cell>
+                        
+            <cell index="2" col="Surname">PAPPER</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">C T</cell>
+                        
+            <cell index="5" col="AgeAtDeath">18</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-02-20T00:00:00" col="DateOfDeath">20/02/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">"C" Coy. 24th Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'722656'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">J.I. 97.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Charles Frederick and Mary Eliza Papper, of 28, Mendora Rd., Fulham, London.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="26">
+                        
+            <cell index="1" col="Id">2758672</cell>
+                        
+            <cell index="2" col="Surname">PERKINS</cell>
+                        
+            <cell index="3" col="Forename">ROBERT WILLIAM</cell>
+                        
+            <cell index="4" col="Initials">R W</cell>
+                        
+            <cell index="5" col="AgeAtDeath">19</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-11-20T00:00:00" col="DateOfDeath">20/11/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Service Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">M.T. 6th Depot</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'M/53488'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 137.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of William and Rose Jane Perkins, of 59, Speke Rd., Battersea, London.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="27">
+                        
+            <cell index="1" col="Id">2758674</cell>
+                        
+            <cell index="2" col="Surname">SIMMONS</cell>
+                        
+            <cell index="3" col="Forename">HAYFORD DOUGLAS</cell>
+                        
+            <cell index="4" col="Initials">H D</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-06-06T00:00:00" col="DateOfDeath">06/06/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Gunner</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'1168'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 128.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Mrs. Estelle Simmons.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="28">
+                        
+            <cell index="1" col="Id">2758675</cell>
+                        
+            <cell index="2" col="Surname">SIMPSON</cell>
+                        
+            <cell index="3" col="Forename">THOMAS WILLIAM</cell>
+                        
+            <cell index="4" col="Initials">T W</cell>
+                        
+            <cell index="5" col="AgeAtDeath">30</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-04-12T00:00:00" col="DateOfDeath">12/04/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Gunner</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'99665'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">J.I. 99.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Thomas and Mary Simpson, of Newcastle-on-Tyne; husband of Edith May Bird (formerly Simpson), of 109, Sandyford Rd., Newcastle-on-Tyne.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="29">
+                        
+            <cell index="1" col="Id">2758676</cell>
+                        
+            <cell index="2" col="Surname">THOMPSON</cell>
+                        
+            <cell index="3" col="Forename">MAX</cell>
+                        
+            <cell index="4" col="Initials">M</cell>
+                        
+            <cell index="5" col="AgeAtDeath">20</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1918-05-07T00:00:00" col="DateOfDeath">07/05/1918</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Newfoundland Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">2nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">Canadian</cell>
+                        
+            <cell index="14" col="ServiceNumber">'4318'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Newfoundland Plot. 3.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of the late Joseph and Lydia Thompson, of Bonavista, Newfoundland.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="30">
+                        
+            <cell index="1" col="Id">2758677</cell>
+                        
+            <cell index="2" col="Surname">VENABLES</cell>
+                        
+            <cell index="3" col="Forename">HAROLD JOHN</cell>
+                        
+            <cell index="4" col="Initials">H J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">43</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-02-22T00:00:00" col="DateOfDeath">22/02/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Rifleman</cell>
+                        
+            <cell index="10" col="Regiment">King's Royal Rifle Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">3rd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'R/15384'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. I.I. 112.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Thomas and Mary Anne Venables.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="31">
+                        
+            <cell index="1" col="Id">2758678</cell>
+                        
+            <cell index="2" col="Surname">WALLACE</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-02-07T00:00:00" col="DateOfDeath">07/02/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Gunner</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">7th Reserve Bde. Heavy Arty.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'135781'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">K.I. 100.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="32">
+                        
+            <cell index="1" col="Id">2758679</cell>
+                        
+            <cell index="2" col="Surname">WHITE</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">G E</cell>
+                        
+            <cell index="5" col="AgeAtDeath">18</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-03-09T00:00:00" col="DateOfDeath">09/03/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">22nd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'683320'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">J.I. 98.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Son of Charles and Emily White.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="33">
+                        
+            <cell index="1" col="Id">2758680</cell>
+                        
+            <cell index="2" col="Surname">YOUNG</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">H</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1916-08-04T00:00:00" col="DateOfDeath">04/08/1916</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">24th Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'6311'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. K.I. 97.</cell>
+                        
+            <cell index="18" col="AdditionalInfo">Husband of Ada Florence Young, of 31, Dalwood St., Camberwell, London.</cell>
+                        
+            <cell index="19" col=""/>
+                    
+        </row>
+                
+        <row number="34">
+                        
+            <cell index="1" col="Id">2758649</cell>
+                        
+            <cell index="2" col="Surname">DIXON</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">G</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1920-01-06T00:00:00" col="DateOfDeath">06/01/1920</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Private</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Service Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">10th Mobile Coy.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'MR/47838'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 138.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="35">
+                        
+            <cell index="1" col="Id">2758656</cell>
+                        
+            <cell index="2" col="Surname">GRAHAM</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">M</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1920-08-29T00:00:00" col="DateOfDeath">29/08/1920</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Serjeant</cell>
+                        
+            <cell index="10" col="Regiment">Royal Field Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">23rd Bde. H.Q.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'30564'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">XI. 142.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="36">
+                        
+            <cell index="1" col="Id">2758667</cell>
+                        
+            <cell index="2" col="Surname">McKENNA</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1919-11-06T00:00:00" col="DateOfDeath">06/11/1919</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Corporal</cell>
+                        
+            <cell index="10" col="Regiment">Royal Army Service Corps</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">6th M.T. Depot</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'EMT/54817'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 131.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="37">
+                        
+            <cell index="1" col="Id">2758673</cell>
+                        
+            <cell index="2" col="Surname">REED</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">A</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1916-09-29T00:00:00" col="DateOfDeath">29/09/1916</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Rifleman</cell>
+                        
+            <cell index="10" col="Regiment">London Regiment</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">23rd Bn.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'4572'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">KI. 98.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="38">
+                        
+            <cell index="1" col="Id">2758657</cell>
+                        
+            <cell index="2" col="Surname">HALLIGAN</cell>
+                        
+            <cell index="3" col="Forename"/>
+                        
+            <cell index="4" col="Initials">J</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-04-14T00:00:00" col="DateOfDeath">14/04/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Gunner</cell>
+                        
+            <cell index="10" col="Regiment">Royal Garrison Artillery</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">Lancs Heavy Bty.</cell>
+                        
+            <cell index="13" col="CountryOfService">United Kingdom</cell>
+                        
+            <cell index="14" col="ServiceNumber">'308719'</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Mil. Plot. X. 142.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="39">
+                        
+            <cell index="1" col="Id">6017925</cell>
+                        
+            <cell index="2" col="Surname">DA CRUZ</cell>
+                        
+            <cell index="3" col="Forename">BENTO</cell>
+                        
+            <cell index="4" col="Initials">B</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-10-08T00:00:00" col="DateOfDeath">08/10/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Soldier</cell>
+                        
+            <cell index="10" col="Regiment">Portuguese Army</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="12" col="Unit">Corpo de Artilharia Pesada/Batalhao de Artilharia de Posicao</cell>
+                        
+            <cell index="13" col="CountryOfService">Portuguese</cell>
+                        
+            <cell index="14" col="ServiceNumber">''</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Grave H.I.97.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="40">
+                        
+            <cell index="1" col="Id">6016943</cell>
+                        
+            <cell index="2" col="Surname">BIRMANN</cell>
+                        
+            <cell index="3" col="Forename">AUGUSTE</cell>
+                        
+            <cell index="4" col="Initials">A</cell>
+                        
+            <cell index="5" col="AgeAtDeath">0</cell>
+                        
+            <cell index="6" col="Honours"/>
+                        
+            <cell index="7" date="1917-11-10T00:00:00" col="DateOfDeath">10/11/1917</cell>
+                        
+            <cell index="8" col="DateOfDeath2"/>
+                        
+            <cell index="9" col="Rank">Soldier</cell>
+                        
+            <cell index="10" col="Regiment">Russian Army</cell>
+                        
+            <cell index="11" col="SecondaryRegiment"/>
+                        
+            <cell index="13" col="CountryOfService">Russian</cell>
+                        
+            <cell index="14" col="ServiceNumber">''</cell>
+                        
+            <cell index="15" col="Burial">United Kingdom</cell>
+                        
+            <cell index="16" col="Cemetery">WINCHESTER (MAGDALEN HILL) CEMETERY</cell>
+                        
+            <cell index="17" col="GraveRef">Grave H1 98.</cell>
+                        
+            <cell index="18" col="AdditionalInfo"/>
+                    
+        </row>
+                
+        <row number="41" span="1048536">
+                        
+            <cell index="1" col="Id"/>
+                    
+        </row>
+            
+    </sheet>
+    
+</spreadsheet>
