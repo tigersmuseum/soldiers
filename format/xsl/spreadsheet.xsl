@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<xsl:stylesheet version="1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="office style ooow dr3d xsi xsd html chart xhtml oooc dom svg presentation grddl ooo script rpt xforms of text table draw fo xlink form tableooo math dc meta number field" >
+<xsl:stylesheet version="1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="office table" >
 
 <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
@@ -23,10 +23,6 @@
 </xsl:template>
 
 
-<!-- 
- <xsl:template match="table:table-row[not(table:table-cell[1]/*)]"/>
- -->
-
 <xsl:template match="table:table-row">
 <row>
 	<xsl:attribute name="number"><xsl:value-of select="position() + sum(preceding-sibling::table:table-row/@table:number-rows-repeated) - count(preceding-sibling::table:table-row/@table:number-rows-repeated)"/></xsl:attribute>
@@ -34,6 +30,7 @@
 	<xsl:apply-templates select="table:table-cell"/>
 </row>
 </xsl:template>
+
 
 <xsl:template match="table:table-cell">
 <cell>
@@ -49,6 +46,7 @@
 </xsl:template>
 
 <xsl:template match="@office:value-type"/>
+
 
 <xsl:template match="@table:number-rows-repeated">
 	<xsl:attribute name="span"><xsl:value-of select="."/></xsl:attribute>
