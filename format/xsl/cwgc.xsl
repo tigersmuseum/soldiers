@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <xsl:stylesheet  xmlns="http://royalhampshireregiment.org/soldiers" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
+<!-- 
+	Reformat a spreadsheet of data downloaded from the CWGC Find War Dead site as Soldiers XML.
+ -->
+ 
 <xsl:output method="xml" indent="no"/>
 
 <xsl:template match="/">
