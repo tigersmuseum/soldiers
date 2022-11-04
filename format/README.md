@@ -17,3 +17,8 @@ Let's use the CWGC Find War Dead site to find [First World War soldiers buried i
 The output from **spreadsheet.xsl** looks like [this](example/spreadsheet.xml). You'll see that row 1 has the column names, so we can apply **col-names.xsl** to get [this](example/spreadsheet-names.xml). This last step isn't strictly necessary, but it makes writing the custom stylesheet easier, and the result more readable.
 
 The final step is to create the Soldiers XML, using a custom stylesheet that depends on the source of the data. In this case, **cwgc.xsl**. The result is [Soldiers XML](example/soldiers.xml).
+
+
+## Normalization
+
+Fields in a database must be in a standard form so that they can be compared. In particular, the soldiers database must have rules governing how ranks are expressed. The standard form of ranks in a soldiers database is given by the *ranks* table. You can, if you wish, edit this as you see fit, but it makes sense to adopt a common standard for ranks. The database schema therefore comes with a [rank.csv](../data/rank.csv) file that offers such a standard. The [soldiers-java](https://github.com/tigersmuseum/soldiers-java) repository includes a utility (*soldiers.database.Normalize*) that normalizes ranks in Soldiers XML so that each rank attribute is set to best match from **rank.csv**.
