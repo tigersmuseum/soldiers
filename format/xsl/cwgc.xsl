@@ -37,7 +37,10 @@
 </xsl:template>
 
 <xsl:template match="cell[@col = 'AdditionalInfo']">
+	<xsl:variable name="text" select="normalize-space(.)"/>
+	<xsl:if test="string-length($text) &gt; 0">
 	<additional><xsl:value-of select="normalize-space(.)"/></additional>
+	</xsl:if>
 </xsl:template>
 
 <xsl:template match="cell[@col = 'honours']">
