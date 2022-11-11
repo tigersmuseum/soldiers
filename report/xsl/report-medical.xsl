@@ -36,7 +36,7 @@
 
 <xsl:template match="soldiers:note[starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]" mode="medicaltext">
 <p><xsl:value-of select="."/>
-<xsl:text> [</xsl:text><xsl:value-of select="concat('WINHR: ', @sourceref)"/><xsl:text>]</xsl:text>
+<xsl:text> [</xsl:text><xsl:value-of select="concat('WINHR: ', @sourceref)"/><xsl:apply-templates select="@amot"/><xsl:text>]</xsl:text>
 </p>
 </xsl:template>
 
@@ -52,6 +52,10 @@
 
 <xsl:template match="soldiers:note" mode="medicaltext">
 <p>TO DO</p>
+</xsl:template>
+
+<xsl:template match="@amot">
+<xsl:text>, </xsl:text><a href="{concat('https://www.theogilbymuster.com/record/', substring-after(., '/'))}">Ogilby Muster</a>
 </xsl:template>
 
 </xsl:stylesheet>
