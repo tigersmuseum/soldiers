@@ -1,0 +1,1 @@
+This folder is for reference data that should be standard across all soldiers database instances.
