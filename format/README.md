@@ -6,7 +6,7 @@ Information about soldiers comes from various sources in a various data formats.
 
 ## Preparing Data
 
-First, we need to create Soldiers XML. For example, by [extracting data from a spreadsheet](spreadsheet.md). Next, we need make sure that fields in the Soldiers XML are used in a consistent way that lets you comparing them with the same fields in the database. This is [data normalization](normalization.md).
+First, we need to create Soldiers XML. For example, by [extracting data from a spreadsheet](spreadsheet.md). Next, we need make sure that fields in the Soldiers XML are used in a consistent way that lets you compare them with the same fields in the database. This is [data normalization](normalization.md).
 
 ## Searching the database
 
@@ -20,4 +20,4 @@ The search process adds a **candidate** element to each person for each suitable
 
 ## Filtering
 
-Having search against the database, we may want to select all the person entries that are identified, all that are ambiguous, or all that are unknown. The XSLT stylesheets that do this are [filter-identified.xsl](xsl/filter-identified.xsl), [filter-ambiguous.xsl](xsl/filter-ambiguous.xsl) and [filter-unknown.xsl](xsl/filter-unknown.xsl).
+Having searched against the database, we may want to select all the person entries that are identified, all that are ambiguous, or all that are unknown. The XSLT stylesheets that do this are [filter-identified.xsl](xsl/filter-identified.xsl), [filter-ambiguous.xsl](xsl/filter-ambiguous.xsl) and [filter-unknown.xsl](xsl/filter-unknown.xsl).
