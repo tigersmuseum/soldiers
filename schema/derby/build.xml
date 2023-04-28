@@ -72,7 +72,7 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		
-			insert into RANK (ABBREV, NAME, ORDINAL) VALUES('Sub', 'Subaltern', 10);
+			select * from PERSON P, SERVICE S where P.SURNAME = 'OFFER' and P.SID = S.SID;
 		
 		]]>
 		<classpath refid="derby.path"/>

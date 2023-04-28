@@ -1,1 +1,1 @@
-* __[A Soldiers Database](SoldiersDB.pdf)__: Presentation to the National Army Museum (NAM) conference, 19 April 2023
+* [A Soldiers Database](SoldiersDB.pdf): Presentation to the National Army Museum (NAM) conference, 19 April 2023
