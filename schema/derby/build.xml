@@ -66,17 +66,5 @@
 		<classpath refid="derby.path"/>
 	</sql>		
 	</target>
-
-		
-	<target name="scratch">
-	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
-		<![CDATA[
-		
-			select * from PERSON P, SERVICE S where P.SURNAME = 'OFFER' and P.SID = S.SID;
-		
-		]]>
-		<classpath refid="derby.path"/>
-	</sql>		
-	</target>
 	
 </project>
