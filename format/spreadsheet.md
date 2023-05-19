@@ -6,4 +6,4 @@ Optionally, if the spreadsheet has column headings, then **col-names.xsl** can b
 
 We then use an XSL stylesheet to transform the XML generated from the spreadsheet to Soldiers XML. This, of course, need to be different for each source spreadsheet format.
 
-See [a worked example](example).
+This [worked example](example) demonstrates the process.
