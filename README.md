@@ -8,3 +8,5 @@ As well as the database, this repository contains the definition of a **Soldiers
 The [format](format/README.md) folder in this repository contains XSLT spreadsheets for creating and manipulating Soldiers XML. The [report](report/README.md) folder has spreadsheets for generating HTML from Soldiers XML.
 
 Java utilities for interacting with the database can be found in the [soldiers-java](https://github.com/tigersmuseum/soldiers-java) repository.
+
+Please contact [archive@royalhampshireregiment.org](mailto:archive@royalhampshireregiment.org) if you have any questions.
