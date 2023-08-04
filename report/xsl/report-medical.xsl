@@ -9,7 +9,7 @@
 </xsl:template>
 
 
-<xsl:template match="soldiers:note" mode="medical">
+<xsl:template match="soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]" mode="medical">
 <h4>
 <xsl:apply-templates select="." mode="medicaldate"/>
 <xsl:text> (</xsl:text><xsl:value-of select="@source"/><xsl:text>) </xsl:text>
@@ -32,6 +32,8 @@
 <xsl:template match="soldiers:note" mode="medicaldate">
 <span class="date">no date</span>
 </xsl:template>
+
+<xsl:template match="soldiers:note" mode="medical"/>
 
 
 <xsl:template match="soldiers:note[starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]" mode="medicaltext">

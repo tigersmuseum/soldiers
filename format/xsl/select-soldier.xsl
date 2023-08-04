@@ -23,11 +23,18 @@
 
 <xsl:template match="source">
 	<xsl:message><xsl:value-of select="@name"/></xsl:message>
-	<xsl:apply-templates select="document(@file)//soldiers:person[soldiers:candidate/@sid = $sid]" mode="copy"/>
+	<xsl:apply-templates select="document(@file)//soldiers:person[soldiers:candidate/@sid = $sid]" mode="copy">
+		<xsl:with-param name="src" select="@name" />
+	</xsl:apply-templates>
 </xsl:template>
 
 <xsl:template match="soldiers:person" mode = "copy">
-	<xsl:copy-of select="."/>
+	<xsl:param name="src"/>
+	<xsl:copy>
+		<xsl:copy-of select="@*"/>
+		<xsl:attribute name="src"><xsl:value-of select="$src"/></xsl:attribute>
+		<xsl:copy-of select="*"/>
+	</xsl:copy>
 </xsl:template>
 
 </xsl:stylesheet>
