@@ -9,7 +9,6 @@
 <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
 <xsl:template match="/">
-<xsl:message><xsl:value-of select="count(.//bio)"/></xsl:message>
 <html>
 <head>
 	<title>Biography</title>
