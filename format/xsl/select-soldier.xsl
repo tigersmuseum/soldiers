@@ -11,7 +11,7 @@
 	
  -->
 
-<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+<xsl:output method="xml" encoding="UTF-8" indent="no"/>
 
 <xsl:param name="sid"/>
 
