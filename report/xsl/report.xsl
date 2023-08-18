@@ -9,6 +9,7 @@
 <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
 <xsl:template match="/">
+<xsl:message><xsl:value-of select="count(.//bio)"/></xsl:message>
 <html>
 <head>
 	<title>Biography</title>
@@ -21,20 +22,14 @@
 	</style>
 </head>
 <body>
-<!-- 
-	<xsl:apply-templates select="//soldiers:person[starts-with(soldiers:surname,'B')]">
- -->
-	<xsl:apply-templates select="//soldiers:person">
-		<xsl:sort select="soldiers:surname"/>
-		<xsl:sort select="soldiers:initials"/>
-	</xsl:apply-templates>
+	<xsl:apply-templates select=".//bio"/>
 </body>
 </html>
 </xsl:template>
 
-<xsl:template match="soldiers:person">
+<xsl:template match="bio">
 	<article>
-		<xsl:apply-templates select="." mode="header"/>
+		<xsl:apply-templates select="database/soldiers:person[1]" mode="header"/>
 		
 		<xsl:apply-templates select="." mode="medical"/>
 		
