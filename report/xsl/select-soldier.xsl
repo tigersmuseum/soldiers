@@ -25,7 +25,7 @@
 
 <xsl:template match="source">
 	<xsl:param name="sid" select="$sid"/>
-	<xsl:message><xsl:value-of select="@name"/></xsl:message>
+	<xsl:message>Searching in source: <xsl:value-of select="@name"/></xsl:message>
 	<xsl:apply-templates select="document(@file)//soldiers:person[soldiers:candidate/@sid = $sid]" mode="copy"/>
 </xsl:template>
 
