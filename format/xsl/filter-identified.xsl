@@ -6,7 +6,7 @@
 	Filter to select uniquely identified soldiers (exactly one candidate element)
  -->
  
-<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+<xsl:output method="xml" encoding="UTF-8" indent="no"/>
 
 <xsl:template match="/|*|@*|comment()|processing-instruction()|text()">
   <xsl:copy>

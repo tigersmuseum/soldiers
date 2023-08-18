@@ -6,7 +6,7 @@
 	Filter to select unidentified soldiers (no candidate element)
  -->
  
-<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+<xsl:output method="xml" encoding="UTF-8" indent="no"/>
 
 <xsl:template match="/|*|@*|comment()|processing-instruction()|text()">
   <xsl:copy>
