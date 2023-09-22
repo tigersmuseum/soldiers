@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<xsl:stylesheet version="1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="office table" >
+<xsl:stylesheet version="1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="office table text" >
 
 <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
@@ -36,7 +36,7 @@
 <cell>
 	<xsl:attribute name="index"><xsl:value-of select="position() + sum(preceding-sibling::table:table-cell/@table:number-columns-repeated) - count(preceding-sibling::table:table-cell/@table:number-columns-repeated)"/></xsl:attribute>
 	<xsl:apply-templates select="@office:value-type"/>
-	<xsl:value-of select="."/>
+	<xsl:apply-templates select="." mode="text"/>
 </cell>
 </xsl:template>
 
@@ -52,4 +52,17 @@
 	<xsl:attribute name="span"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 
-</xsl:stylesheet> 
+<xsl:template match="text:s" mode="text">
+	<xsl:text> </xsl:text>
+</xsl:template>
+
+<xsl:template match="*" mode="text">
+	<xsl:apply-templates select="text()|*" mode="text"/>
+</xsl:template>
+
+<xsl:template match="text()" mode="text">
+	<xsl:value-of select="."/>
+</xsl:template>
+
+</xsl:stylesheet>
+
