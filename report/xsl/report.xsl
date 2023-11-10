@@ -5,6 +5,7 @@
 <xsl:import href="report-medical.xsl"/>
 <xsl:import href="report-cwgc.xsl"/>
 <xsl:import href="report-swb.xsl"/>
+<xsl:import href="report-other.xsl"/>
 
 <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
@@ -13,10 +14,12 @@
 <head>
 	<title>Biography</title>
 	<style>
-	footer {
-	
+	footer {	
 	 color: grey;
 	 font-size: small;
+	}
+	.other {
+		font-style: italic;
 	}
 	</style>
 </head>
@@ -34,13 +37,32 @@
 		
 		<xsl:apply-templates select="soldiers:note" mode="swb"/>
 
-		<xsl:apply-templates select="soldiers:note" mode="cwgc"/>
+		<xsl:apply-templates select=".//soldiers:note[@source = 'Commonwealth War Graves Commission']" mode="cwgc"/>
 
-		<footer><p><xsl:text>WINHR: SID/</xsl:text><xsl:value-of select="@sid"/></p></footer>
+		<xsl:apply-templates select=".//source" mode="other"/>
+
+		<footer>
+			<p><xsl:text>WINHR: SID/</xsl:text><xsl:value-of select="@sid"/></p>
+			<p>Sources: <xsl:apply-templates select=".//source"/></p>
+		</footer>
 	</article>
 	
 	<hr/>
 	
 </xsl:template>
+
+
+<xsl:template match="source">
+	<xsl:value-of select="@name"/>
+	<xsl:choose>
+		<xsl:when test="following-sibling::source">
+			<xsl:text>, </xsl:text>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:text>.</xsl:text>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
 
 </xsl:stylesheet>

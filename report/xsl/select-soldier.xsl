@@ -26,11 +26,16 @@
 <xsl:template match="source">
 	<xsl:param name="sid" select="$sid"/>
 	<xsl:message>Searching in source: <xsl:value-of select="@name"/></xsl:message>
-	<xsl:apply-templates select="document(@file)//soldiers:person[soldiers:candidate/@sid = $sid]" mode="copy"/>
+	<xsl:apply-templates select="document(@file)//soldiers:person[soldiers:candidate/@sid = $sid]" mode="copy">
+		<xsl:with-param name="source-name" select="@name"/>
+	</xsl:apply-templates>
 </xsl:template>
 
 <xsl:template match="soldiers:person" mode = "copy">
-	<xsl:copy-of select="."/>
+	<xsl:param name="source-name"/>
+	<source name="{$source-name}">
+		<xsl:copy-of select="."/>
+	</source>
 </xsl:template>
 
 </xsl:stylesheet>
