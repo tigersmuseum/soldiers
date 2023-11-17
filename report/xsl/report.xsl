@@ -6,6 +6,7 @@
 <xsl:import href="report-cwgc.xsl"/>
 <xsl:import href="report-swb.xsl"/>
 <xsl:import href="report-other.xsl"/>
+<xsl:import href="report-medals.xsl"/>
 
 <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
@@ -33,9 +34,11 @@
 	<article>
 		<xsl:apply-templates select="database/soldiers:person[1]" mode="header"/>
 		
-		<xsl:apply-templates select="." mode="medical"/>
+		<xsl:apply-templates select=".//source" mode="medals"/>
+
+ 		<xsl:apply-templates select="." mode="medical"/>
 		
-		<xsl:apply-templates select="soldiers:note" mode="swb"/>
+		<xsl:apply-templates select=".//soldiers:note" mode="swb"/>
 
 		<xsl:apply-templates select=".//soldiers:note[@source = 'Commonwealth War Graves Commission']" mode="cwgc"/>
 
