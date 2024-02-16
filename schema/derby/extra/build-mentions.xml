@@ -20,27 +20,54 @@
 		</sql>		
 	</target>
 			
-	<target name="import-mentions">
+	<target name="import-sources">
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'MENTIONS', 'SID,SOURCE,SOURCEREF,TYPE', null, 'C:\Users\Archive\Documents\GitHub\soldiers-java\lonlist.csv', null, null, null, 0)
+		(NULL, 'SOURCES', 'KEY,LABEL,REF', null, 'H:\Archive\Admin\Database\eclipse-workspace\Tigers\database\sources.csv', null, null, null, 0)
 		]]>
 		<classpath refid="derby.path"/>
 		</sql>		
 	</target>
+	
+	<target name="import-mentions">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<![CDATA[
+	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+	(NULL, 'MENTIONS', 'SID,SOURCE,SOURCEREF,TYPE', null, 'C:\Users\Archive\Documents\GitHub\soldiers-java\lonlist.csv', null, null, null, 0)
+	]]>
+	<classpath refid="derby.path"/>
+	</sql>		
+	</target>
 		
-	<target name="scratch-mentions">
+	<target name="scratch">
 		<echo>${jdbc}</echo>
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 
-		select SID, count(*) from MENTIONS group by SID order by 2 desc fetch first 10 rows only;
+		select * from SOURCES
 			
 		 --select * from MENTIONS where SID in (170072, 104022, 191266, 186975)
 			
 		-- select distinct SOURCE from MENTIONS
 
+		]]>		
+	 	<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
+	<target name="duplicates">
+		<!--
+		FInd where there is more than one entry with the same surname and service number
+		-->
+		<echo>${jdbc}</echo>
+		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		select P1.SURNAME, P1.INITIALS, S1.NUM, P2.SURNAME, P2.INITIALS, S2.NUM from SERVICE as S1, SERVICE as S2, PERSON as P1, PERSON as P2
+			where S1.NUM != '' and S2.NUM != '' and S1.NUM = S2.NUM and S1.SID != S2.SID
+			and S1.SID = P1.SID and S2.SID = P2.SID
+			and P1.SID < P2.SID
+			and P1.SURNAME = P2.SURNAME
 		]]>		
 	 	<classpath refid="derby.path"/>
 		</sql>		
