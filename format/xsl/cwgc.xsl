@@ -9,7 +9,7 @@
 
 <xsl:template match="/">
   <list source="{spreadsheet/sheet[1]/@name}">
-    <xsl:apply-templates select="//row"/>
+    <xsl:apply-templates select="//row[position() &lt;= 20]"/>
   </list>
 </xsl:template>
 
@@ -20,12 +20,12 @@
 	<initials><xsl:value-of select="cell[@col = 'Initials']"/></initials>
 
 	<service>
-		<record rank="{cell[@col = 'Rank']}" regiment="{cell[@col = 'Regiment']}" before="{substring-before(cell[@col = 'DateOfDeath']/@date, 'T')}">
+		<record rank="{cell[@col = 'Rank']}" regiment="{cell[@col = 'Regiment']}" before="{cell[@col = 'DateOfDeath']/@date}">
 			<xsl:apply-templates select="cell[@col = 'ServiceNumber']"/>
 		</record>
 	</service>
 
-	<death date="{substring-before(cell[@col = 'DateOfDeath']/@date, 'T')}"/>
+	<death date="{cell[@col = 'DateOfDeath']/@date}"/>
 
 	<note source="Commonwealth War Graves Commission" sourceref="{concat('https://www.cwgc.org/find-records/find-war-dead/casualty-details/', cell[@col = 'Id'])}">
 		<xsl:apply-templates select="cell[@col = 'AgeAtDeath']"/>
