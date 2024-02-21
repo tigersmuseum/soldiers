@@ -6,18 +6,16 @@
 	Filter to select uniquely identified soldiers (exactly one candidate element)
  -->
  
-<xsl:output method="xml" encoding="UTF-8" indent="no"/>
+<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-<xsl:template match="/|*|@*|comment()|processing-instruction()|text()">
+<xsl:template match="/|*|@*|comment()|processing-instruction()">
   <xsl:copy>
-    <xsl:apply-templates select="*|@*|comment()|processing-instruction()|text()"/>
+    <xsl:apply-templates select="*|@*|comment()|processing-instruction()"/>
   </xsl:copy>
 </xsl:template>
 
 <xsl:template match="soldiers:person[count(soldiers:candidate) = 1]">
-  <xsl:copy>
-    <xsl:apply-templates select="*|@*|comment()|processing-instruction()|text()"/>
-  </xsl:copy>
+  <xsl:copy-of select="."/>
 </xsl:template>
 
 <xsl:template match="soldiers:person"/>
