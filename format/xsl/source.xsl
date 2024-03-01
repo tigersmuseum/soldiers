@@ -17,9 +17,22 @@
 	<xsl:value-of select="$sourcekey"/>
 	<xsl:text>,</xsl:text>
 	<xsl:value-of select="soldiers:candidate[1]/@sid"/>
+	<xsl:apply-templates select="soldiers:note[1]"/>
+	<xsl:text>,</xsl:text>
 	<xsl:text>&#13;</xsl:text>
 </xsl:template>
 
 <xsl:template match="soldiers:person"/>
+
+<xsl:template match="soldiers:note">
+	<xsl:choose>
+		<xsl:when test="$sourcekey = 'CWGC'">
+			<xsl:value-of select="concat('cwgc:', substring-after(@sourceref, '/casualty-details/'))"/>
+		</xsl:when>
+		<xsl:otherwise>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
 
 </xsl:stylesheet>
