@@ -17,8 +17,8 @@
 	<xsl:value-of select="$sourcekey"/>
 	<xsl:text>,</xsl:text>
 	<xsl:value-of select="soldiers:candidate[1]/@sid"/>
-	<xsl:apply-templates select="soldiers:note[1]"/>
 	<xsl:text>,</xsl:text>
+	<xsl:apply-templates select="soldiers:note[1]"/>
 	<xsl:text>&#13;</xsl:text>
 </xsl:template>
 
