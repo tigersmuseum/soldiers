@@ -24,7 +24,7 @@
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'SOURCES', 'KEY,LABEL,SOURCE_REF,FILE', null, 'sources.csv', null, null, null, 0)
+		(NULL, 'SOURCES', 'KEY,LABEL,SOURCE_REF,FILE', null, '${data-local}/sources.csv', null, null, null, 0)
 		]]>
 		<classpath refid="derby.path"/>
 		</sql>		
@@ -34,7 +34,21 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 	<![CDATA[
 	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, 'J:\Soldiers\data\CWGC\mentions.csv', null, null, null, 0)
+	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, 'mention.csv', null, null, null, 0)
+	]]>
+	<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+	
+	<target name="import-mentions-2">
+	<!--
+		In case the same source mentions a specific soldier more than once ...
+		Import the mentions into a temporary table, then 'select distint into' MENTIONS
+	-->
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<![CDATA[
+	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, 'mention.csv', null, null, null, 0)
 	]]>
 	<classpath refid="derby.path"/>
 	</sql>		
@@ -45,7 +59,7 @@
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 
-		drop table SOURCES
+		select * from SOURCES
 			
 		 --select * from MENTIONS where SID in (170072, 104022, 191266, 186975)
 			
