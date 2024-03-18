@@ -79,13 +79,18 @@
 </xsl:template>
 
 <xsl:template match="table:table-cell">
-	<td>
+	<xsl:element name="td">
+		<xsl:apply-templates select="@table:number-columns-spanned"/>
 		<xsl:apply-templates select="*"/>
-	</td>
+	</xsl:element>
 </xsl:template>
 
 <xsl:template match="@text:style-name">
 	<xsl:attribute name="class"><xsl:value-of select="."/></xsl:attribute>
+</xsl:template>
+
+<xsl:template match="@table:number-columns-spanned">
+	<xsl:attribute name="colspan"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 
 <xsl:template match="*"/>
