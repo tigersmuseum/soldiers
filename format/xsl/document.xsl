@@ -7,7 +7,8 @@
 	A .odt file is a Zip archive. This XSLT operates on the "content.xml" file extracted from the archive.
  -->
 
-<xsl:output method="xml" indent="no"/>
+<xsl:output method="xml" indent="no" standalone="no"
+	doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 
 <xsl:template match="office:document-content">
   <html>
@@ -60,6 +61,11 @@
 
 <xsl:template match="text:s">
 	<xsl:text> </xsl:text>
+</xsl:template>
+
+<xsl:template match="text:tab">
+	<!--  convert tab to 2 non-breaking spaces -->
+	<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;&nbsp;]]></xsl:text>
 </xsl:template>
 
 <xsl:template match="text()">
