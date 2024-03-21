@@ -24,7 +24,7 @@
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'SOURCES', 'KEY,LABEL,SOURCE_REF,FILE', null, '${data-local}/sources.csv', null, null, null, 0)
+		(NULL, 'SOURCES', 'NAME,LABEL,SOURCE_REF,FILE', null, '${data-local}/sources.csv', null, null, null, 0)
 		]]>
 		<classpath refid="derby.path"/>
 		</sql>		
@@ -34,21 +34,34 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 	<![CDATA[
 	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, 'mention.csv', null, null, null, 0)
+	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0)
 	]]>
 	<classpath refid="derby.path"/>
 	</sql>		
 	</target>
 	
-	<target name="import-mentions-2">
+	<target name="import-mentions-raw">
 	<!--
 		In case the same source mentions a specific soldier more than once ...
-		Import the mentions into a temporary table, then 'select distint into' MENTIONS
+		Import the mentions into a temporary table, then 'select distinct into' MENTIONS
 	-->
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 	<![CDATA[
-	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, 'mention.csv', null, null, null, 0)
+			
+		CREATE TABLE RAW_MENTIONS (
+			"SID" INTEGER NOT NULL,
+			"SOURCE" VARCHAR(32) NOT NULL,
+			"ITEM_REF" VARCHAR(128)
+		);
+		
+		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+		(NULL, 'RAW_MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0);
+		
+		insert into MENTIONS
+			select distinct SID, SOURCE, ITEM_REF from RAW_MENTIONS;
+		
+		drop table RAW_MENTIONS;
+		
 	]]>
 	<classpath refid="derby.path"/>
 	</sql>		
@@ -59,11 +72,14 @@
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 
-		select * from SOURCES
+		 --select SID, count(*) from MENTIONS group by SID order by 2 desc fetch first 10 rows only;
+			select distinct SOURCE from MENTIONS;
+		--select * from MENTIONS where SID = 120793;
+			--select * from PERSON where SID = 120793;
 			
-		 --select * from MENTIONS where SID in (170072, 104022, 191266, 186975)
+			--select *  from PERSON P, SERVICE S where P.SURNAME = 'MILNE' and S.NUM = '5576' and P.SID = S.SID;
 			
-		-- select distinct SOURCE from MENTIONS
+		 --select * from SOURCES;
 
 		]]>		
 	 	<classpath refid="derby.path"/>
