@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soldiers="http://royalhampshireregiment.org/soldiers" version="1.0">
 
-<xsl:template match="soldiers:person" mode="medical">
-	<xsl:if test="soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]">
+<xsl:template match="sources" mode="medical">
+	<xsl:if test=".//soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]">
 		<h3>Medical Records</h3>
-		<xsl:apply-templates select="soldiers:note" mode="medical"/>
+		<xsl:apply-templates select=".//soldiers:note" mode="medical"/>
 	</xsl:if>
 </xsl:template>
 
 
-<xsl:template match="soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]" mode="medical">
+<xsl:template match="soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X') or starts-with(@source, 'War Office Casualty')]" mode="medical">
 <h4>
 <xsl:apply-templates select="." mode="medicaldate"/>
 <xsl:text> (</xsl:text><xsl:value-of select="@source"/><xsl:text>) </xsl:text>

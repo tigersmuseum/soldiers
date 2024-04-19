@@ -36,7 +36,7 @@
 		
 		<xsl:apply-templates select=".//source" mode="medals"/>
 
- 		<xsl:apply-templates select="." mode="medical"/>
+ 		<xsl:apply-templates select="sources" mode="medical"/>
 		
 		<xsl:apply-templates select=".//soldiers:note" mode="swb"/>
 
