@@ -19,16 +19,6 @@
 			<classpath refid="derby.path"/>
 		</sql>		
 	</target>
-			
-	<target name="import-sources">
-		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
-		<![CDATA[
-		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'SOURCES', 'NAME,LABEL,SOURCE_REF,FILE', null, '${data-local}/sources.csv', null, null, null, 0)
-		]]>
-		<classpath refid="derby.path"/>
-		</sql>		
-	</target>
 	
 	<target name="import-mentions">
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
@@ -73,13 +63,11 @@
 		<![CDATA[
 
 		 --select SID, count(*) from MENTIONS group by SID order by 2 desc fetch first 10 rows only;
-			select distinct SOURCE from MENTIONS;
+			--select distinct SOURCE from MENTIONS;
 		--select * from MENTIONS where SID = 120793;
-			--select * from PERSON where SID = 120793;
+			select * from PERSON where SURNAME like 'LANCAST%';
 			
 			--select *  from PERSON P, SERVICE S where P.SURNAME = 'MILNE' and S.NUM = '5576' and P.SID = S.SID;
-			
-		 --select * from SOURCES;
 
 		]]>		
 	 	<classpath refid="derby.path"/>
