@@ -51,7 +51,17 @@
 </xsl:template>
 
 <xsl:template match="soldiers:person[soldiers:birth]" mode="birthdate">
-	<xsl:text><xsl:value-of select="substring-before(soldiers:birth/@date, '-')"/></xsl:text>
+	<xsl:choose>
+			<xsl:when test="soldiers:birth/@date">
+				<xsl:text><xsl:value-of select="substring-before(soldiers:birth/@date, '-')"/></xsl:text>
+			</xsl:when>
+			<xsl:when test="soldiers:birth/@before">
+				<xsl:text><xsl:value-of select="substring-before(soldiers:birth/@before, '-')"/></xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>?</xsl:text>				
+			</xsl:otherwise>
+	</xsl:choose>
 </xsl:template>
 
 <xsl:template match="soldiers:person" mode="birthdate">

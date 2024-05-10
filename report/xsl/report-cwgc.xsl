@@ -14,6 +14,9 @@
 		<xsl:text> (ref: </xsl:text><xsl:value-of select="soldiers:memorial/@reference"/><xsl:text>)</xsl:text>
 	</p>
 	<xsl:apply-templates select="../soldiers:death"/>
+	<p>
+		CWGC casualty indentifier: <a href="{@sourceref}"><xsl:value-of select="substring-after(@sourceref, 'casualty-details/')"/></a>
+	</p>
 </xsl:template>
 
 
