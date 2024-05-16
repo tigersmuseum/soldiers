@@ -9,7 +9,7 @@
 
 <xsl:template match="/">
   <list source="{spreadsheet/sheet[1]/@name}">
-    <xsl:apply-templates select="//row[position() &lt;= 20]"/>
+    <xsl:apply-templates select="//row"/>
   </list>
 </xsl:template>
 
@@ -20,7 +20,7 @@
 	<initials><xsl:value-of select="cell[@col = 'Initials']"/></initials>
 
 	<service>
-		<record rank="{cell[@col = 'Rank']}" regiment="{cell[@col = 'Regiment']}" before="{cell[@col = 'DateOfDeath']/@date}">
+		<record rank="{cell[@col = 'Rank']}" regiment="{cell[@col = 'Regiment']}" unit="{cell[@col = 'Unit']}" before="{cell[@col = 'DateOfDeath']/@date}">
 			<xsl:apply-templates select="cell[@col = 'ServiceNumber']"/>
 		</record>
 	</service>
