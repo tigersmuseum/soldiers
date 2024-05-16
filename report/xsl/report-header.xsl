@@ -55,8 +55,8 @@
 			<xsl:when test="soldiers:birth/@date">
 				<xsl:text><xsl:value-of select="substring-before(soldiers:birth/@date, '-')"/></xsl:text>
 			</xsl:when>
-			<xsl:when test="soldiers:birth/@before">
-				<xsl:text><xsl:value-of select="substring-before(soldiers:birth/@before, '-')"/></xsl:text>
+			<xsl:when test="soldiers:birth/@after">
+				<xsl:text><xsl:value-of select="substring-before(soldiers:birth/@after, '-')"/></xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>?</xsl:text>				
