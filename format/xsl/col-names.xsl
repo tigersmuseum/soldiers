@@ -27,7 +27,7 @@
 <xsl:template match="cell">
 	<xsl:copy>
 		<xsl:copy-of select="@*"/>
-		<xsl:attribute name="col"><xsl:value-of select="translate(ancestor::sheet/row[$headingrow]/cell[current()/@index = ./@index], &quot; ()/.&apos;:@&quot;, '_')"/></xsl:attribute>
+		<xsl:attribute name="col"><xsl:value-of select="translate(normalize-space(ancestor::sheet/row[$headingrow]/cell[current()/@index = ./@index]), &quot; ()/.&apos;:@&quot;, '_')"/></xsl:attribute>
 	    <xsl:apply-templates select="*|@*|comment()|processing-instruction()|text()"/>
 	</xsl:copy>
 </xsl:template>
