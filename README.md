@@ -1,5 +1,5 @@
 # soldiers
-A database schema for soldiers and their service records.
+A [database schema](schema) for soldiers and their service records.
 
 The database was originally created for the Royal Hampshire Regiment Museum to record the soldiers who served in the regiment and its antecedents. The design is general purpose however, so could be used in the same way by any regimental museum.
 
