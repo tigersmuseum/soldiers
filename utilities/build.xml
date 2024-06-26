@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<project name="Soldiers Database" basedir=".">
+
+	<description>
+		Quality checking utilities.
+	</description>
+
+	<property file="../schema/derby/ant.properties"/>
+
+	<path id="derby.path">
+		<pathelement location="${DERBY_HOME}/lib/derby.jar"/>
+		<pathelement location="${DERBY_HOME}/lib/derbyclient.jar"/>
+	</path>
+	
+	<target name="duplicates">
+		<!--
+		FInd where there is more than one entry with the same surname and service number
+		-->
+		<echo>${jdbc}</echo>
+		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		select P1.SURNAME, P1.INITIALS, S1.NUM, P2.SURNAME, P2.INITIALS, S2.NUM from SERVICE as S1, SERVICE as S2, PERSON as P1, PERSON as P2
+			where S1.NUM != '' and S2.NUM != '' and S1.NUM = S2.NUM and S1.SID != S2.SID
+			and S1.SID = P1.SID and S2.SID = P2.SID
+			and P1.SID < P2.SID
+			and P1.SURNAME = P2.SURNAME
+		]]>		
+	 	<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
+</project>

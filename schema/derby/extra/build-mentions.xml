@@ -6,8 +6,7 @@
 		Relating soldiers to sources.
 	</description>
 
-	<property file="../../schema/derby/ant.properties"/>
-	<property file="ant.properties"/>
+	<property file="../ant.properties"/>
 
 	<path id="derby.path">
 		<pathelement location="${DERBY_HOME}/lib/derby.jar"/>

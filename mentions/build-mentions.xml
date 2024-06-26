@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<project name="Soldiers Database" default="mentions" basedir=".">
+
+	<description>
+		Relating soldiers to sources.
+	</description>
+
+	<property file="../schema/derby/ant.properties"/>
+	<property file="ant.properties"/>
+
+	<path id="derby.path">
+		<pathelement location="${DERBY_HOME}/lib/derby.jar"/>
+		<pathelement location="${DERBY_HOME}/lib/derbyclient.jar"/>
+	</path>
+
+
+	<target name="mentions">
+		<sql src="mentions.sql" driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+			<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
+	<target name="import-mentions">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<![CDATA[
+	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0)
+	]]>
+	<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+	
+	<target name="import-mentions-raw">
+	<!--
+		In case the same source mentions a specific soldier more than once ...
+		Import the mentions into a temporary table, then 'select distinct into' MENTIONS
+	-->
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<![CDATA[
+			
+		CREATE TABLE RAW_MENTIONS (
+			"SID" INTEGER NOT NULL,
+			"SOURCE" VARCHAR(32) NOT NULL,
+			"ITEM_REF" VARCHAR(128)
+		);
+		
+		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
+		(NULL, 'RAW_MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0);
+		
+		insert into MENTIONS
+			select distinct SID, SOURCE, ITEM_REF from RAW_MENTIONS;
+		
+		drop table RAW_MENTIONS;
+		
+	]]>
+	<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+		
+	<target name="make-csv">
+		<xslt in="${sources-list}" out="${source-data}/mentions.csv" style="xsl/sources-all.xsl" force="true"/>		
+	</target>
+	
+</project>
