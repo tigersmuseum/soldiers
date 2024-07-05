@@ -58,7 +58,7 @@
 	</sql>		
 	</target>
 		
-	<target name="make-csv">
+	<target name="make-mentions-csv">
 		<xslt in="${sources-list}" out="${source-data}/mentions.csv" style="xsl/sources-all.xsl" force="true"/>		
 	</target>
 	
