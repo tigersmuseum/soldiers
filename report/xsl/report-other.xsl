@@ -20,6 +20,12 @@
 </p>
 </xsl:template>
 
+<xsl:template match="source[@name = 'PROFILE']" mode="other">
+<p class="other">
+	Biographical research in file: <strong><xsl:value-of select=".//soldiers:note[1]/@filename"/></strong>.
+</p>
+</xsl:template>
+
 <xsl:template match="source" mode="other"/>
 
 </xsl:stylesheet>
