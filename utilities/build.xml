@@ -15,7 +15,7 @@
 	
 	<target name="duplicates">
 		<!--
-		FInd where there is more than one entry with the same surname and service number
+		Find where there is more than one entry with the same surname and service number
 		-->
 		<echo>${jdbc}</echo>
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
