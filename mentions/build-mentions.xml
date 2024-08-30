@@ -14,11 +14,14 @@
 		<pathelement location="${DERBY_HOME}/lib/derbyclient.jar"/>
 	</path>
 
-
 	<target name="mentions">
-		<sql src="mentions.sql" driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<sql src="schema/mentions.sql" driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 			<classpath refid="derby.path"/>
 		</sql>		
+	</target>
+	
+	<target name="make-mentions-csv">
+		<xslt in="${sources-list}" out="${source-data}/mentions.csv" style="xsl/sources-all.xsl" force="true"/>		
 	</target>
 	
 	<target name="import-mentions">
@@ -57,9 +60,18 @@
 	<classpath refid="derby.path"/>
 	</sql>		
 	</target>
+	
+	<target name="report-mentions">
+	<!--
+	-->
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<![CDATA[
 		
-	<target name="make-mentions-csv">
-		<xslt in="${sources-list}" out="${source-data}/mentions.csv" style="xsl/sources-all.xsl" force="true"/>		
+		select count(*) as "TOTAL ROWS" from MENTIONS;
+		select source, count(*) as "MENTIONS" from MENTIONS group by source order by source;	
+	]]>
+	<classpath refid="derby.path"/>
+	</sql>		
 	</target>
 	
 </project>
