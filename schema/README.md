@@ -12,7 +12,7 @@ This repository also contains an XML schema definition (XSD) for **Soldiers XML*
 
 The aim is to produce an XML document that can be used to add data to a *soldiers* database or publish information from it. At the same time, the format can be used to capture records about soldiers from any source; with name rank and number recored formally, and any ancillary information captured as *notes*.
 
-Some [XSLT](https://en.wikipedia.org/wiki/XSLT) stylesheets for creating and transforming Soliders XML can also be found in this repository. See the [format](format) and [report](report) folders.
+Some [XSLT](https://en.wikipedia.org/wiki/XSLT) stylesheets for creating and transforming Soldiers XML can also be found in this repository. See the [format](format) and [report](report) folders.
 
 
 ## Database tools
