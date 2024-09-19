@@ -1,4 +1,9 @@
 <list>
+	<!-- 
+		Processing depends only on there being a @name and @file attribute on each "source" element.
+		Given that, you can add anything else that suits your own needs (we have a "description" element 
+		as a child of each "source" for example).
+	 -->
 	<source name="SOURCENAME" file="..."/>
 	...
 </list>
