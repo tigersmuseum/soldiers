@@ -25,7 +25,11 @@
 	</target>
 	
 	<target name="import-mentions">
-	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">
+	<!--
+		The last parameter of the call is 'REPLACE'. If non-zero, the contents of MENTIONS are overwritten. If
+		zero, the imported data is appended.
+	-->
 	<![CDATA[
 	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
 	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0)
