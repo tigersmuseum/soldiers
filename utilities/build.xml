@@ -74,13 +74,11 @@
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 			
-		select P.SID, P.SURNAME, P.INITIALS, S.NUM, P.BIRTH, P.BORNBEFORE, P.BORNAFTER from PERSON as P, SERVICE as S
-			where BIRTH is not null and (BORNBEFORE is not null or BORNAFTER is not null)
-			and P.SID = S.SID;
+		select SID, SURNAME, INITIALS, BIRTH, BORNBEFORE, BORNAFTER from PERSON
+			where BIRTH is not null and (BORNBEFORE is not null or BORNAFTER is not null);
 			
-		select P.SID, P.SURNAME, P.INITIALS, S.NUM, P.DEATH, P.DIEDBEFORE, P.DIEDAFTER from PERSON as P, SERVICE as S
-			where DEATH is not null and (DIEDBEFORE is not null or DIEDAFTER is not null)
-			and P.SID = S.SID;
+		select SID, SURNAME, INITIALS, DEATH, DIEDBEFORE, DIEDAFTER from PERSON
+			where DEATH is not null and (DIEDBEFORE is not null or DIEDAFTER is not null);
 			
 		]]>		
 	 	<classpath refid="derby.path"/>
