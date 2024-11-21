@@ -36,6 +36,7 @@
 <cell>
 	<xsl:attribute name="index"><xsl:value-of select="position() + sum(preceding-sibling::table:table-cell/@table:number-columns-repeated) - count(preceding-sibling::table:table-cell/@table:number-columns-repeated)"/></xsl:attribute>
 	<xsl:apply-templates select="@office:value-type"/>
+	<xsl:apply-templates select="@table:number-columns-repeated"/>
 	<xsl:apply-templates select="." mode="text"/>
 </cell>
 </xsl:template>
@@ -47,9 +48,12 @@
 
 <xsl:template match="@office:value-type"/>
 
+<xsl:template match="@table:number-columns-repeated">
+	<xsl:attribute name="cols"><xsl:value-of select="."/></xsl:attribute>
+</xsl:template>
 
 <xsl:template match="@table:number-rows-repeated">
-	<xsl:attribute name="span"><xsl:value-of select="."/></xsl:attribute>
+	<xsl:attribute name="rows"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 
 <xsl:template match="text:s" mode="text">
