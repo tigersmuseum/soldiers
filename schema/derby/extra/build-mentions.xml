@@ -56,6 +56,16 @@
 	<classpath refid="derby.path"/>
 	</sql>		
 	</target>
+
+	<target name="export-mentions">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		CALL SYSCS_UTIL.SYSCS_EXPORT_QUERY
+		('select * from MENTIONS', '${data-local}/mentions.csv', null, null, null);
+		]]>
+		<classpath refid="derby.path"/>
+	</sql>		
+	</target>
 		
 	<target name="scratch">
 		<echo>${jdbc}</echo>
