@@ -24,7 +24,7 @@
 	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 	<![CDATA[
 	CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-	(NULL, 'MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0)
+	(NULL, 'MENTIONS', 'SID,SOURCE,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0)
 	]]>
 	<classpath refid="derby.path"/>
 	</sql>		
