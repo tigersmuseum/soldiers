@@ -15,6 +15,7 @@
 <li>
 	<xsl:value-of select="@name"/>
 	<xsl:apply-templates select="soldiers:clasp"/>
+	<xsl:apply-templates select="soldiers:citation"/>
 </li>
 </xsl:template>
 
@@ -31,6 +32,11 @@
 			<xsl:text>, </xsl:text>
 		</xsl:otherwise>
 	</xsl:choose>
+</xsl:template>
+
+<xsl:template match="soldiers:citation">
+	<xsl:text>. Citation: </xsl:text>
+	<xsl:value-of select="."/>
 </xsl:template>
 
 </xsl:stylesheet>
