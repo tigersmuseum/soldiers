@@ -78,4 +78,16 @@
 	</sql>		
 	</target>
 	
+	<target name="scratch">
+	<!--
+	-->
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+	<![CDATA[
+		
+		-- insert SQL here ...
+	]]>
+	<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+	
 </project>
