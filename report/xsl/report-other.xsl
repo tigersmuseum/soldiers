@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:soldiers="http://royalhampshireregiment.org/soldiers" version="1.0">
 
 
-<xsl:template match="source[@name = 'CHARLIE']" mode="other">
+<xsl:template match="source[contains(@name,'CHARLIE')]" mode="other">
 <p class="other">
 	Further details available from volunteer research into the &quot;Portsmouth Pals&quot; Battalions in WW1.
 </p>
