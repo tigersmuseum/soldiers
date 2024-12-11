@@ -164,4 +164,19 @@
 		</sql>		
 	</target>
 	
+	<target name="scratch">
+		<!--
+			A scratchpad for ad hoc queries
+		-->
+		<echo>${jdbc}</echo>
+		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		
+			-- insert SQL here ...
+			delete from MENTIONS where SOURCE = 'LSGC'
+		]]>		
+	 	<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
 </project>
