@@ -4,7 +4,9 @@
 <xsl:template match="sources" mode="medical">
 	<xsl:if test=".//soldiers:note[@type = 'medical' or starts-with(@source, 'Casualty Ledger') or starts-with(@source, 'Operation') or starts-with(@source, 'X')]">
 		<h3>Medical Records</h3>
-		<xsl:apply-templates select=".//soldiers:note" mode="medical"/>
+		<xsl:apply-templates select=".//soldiers:note" mode="medical">
+			<xsl:sort select="@date" order="ascending"/>
+		</xsl:apply-templates>
 	</xsl:if>
 </xsl:template>
 
@@ -57,7 +59,10 @@
 </xsl:template>
 
 <xsl:template match="@amot">
+<!-- 
+Leaving this out, as link no longer works and future of Ogilby Muster is uncertain
 <xsl:text>, </xsl:text><a href="{concat('https://www.theogilbymuster.com/record/', substring-after(., '/'))}">Ogilby Muster</a>
+ -->
 </xsl:template>
 
 </xsl:stylesheet>
