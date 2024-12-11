@@ -35,8 +35,13 @@
 </xsl:template>
 
 <xsl:template match="soldiers:citation">
-	<xsl:text>. Citation: </xsl:text>
-	<xsl:value-of select="."/>
+	<p>
+		<xsl:text>Citation: </xsl:text>
+		<xsl:value-of select="."/>
+		<xsl:if test="@date">
+			<xsl:text> (</xsl:text><xsl:value-of select="@date"/><xsl:text>)</xsl:text>
+		</xsl:if>
+	</p>
 </xsl:template>
 
 </xsl:stylesheet>
