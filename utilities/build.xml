@@ -164,6 +164,30 @@
 		</sql>		
 	</target>
 	
+	<target name="initials">
+		<!--
+			Find entries where there are forenames but not initials, or where INITIALS and FORENAMES are the same
+		-->
+		<echo>${jdbc}</echo>
+		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		
+			--select * from PERSON where INITIALS is null and FORENAMES is not null
+			--select * from PERSON where INITIALS = FORENAMES
+
+			-- Move FORENAMES to INITIALS if it contains initials and INITIALS is null
+			update PERSON set INITIALS = FORENAMES, FORENAMES = null where FORENAMES is not null and INITIALS is null and (LENGTH(FORENAMES) = 1 or LOCATE(' ', FORENAMES) = 2);
+
+			-- Set FORENAMES to null if it contains initials that are already in INITIALS ...
+			update PERSON set FORENAMES = null where INITIALS = FORENAMES and INITIALS is not NULL and (LENGTH(FORENAMES) = 1 or LOCATE(' ', FORENAMES) = 2);
+
+			-- The remainder should be cases where INITIALS is null and FORENAMES has names (rather than initials) 
+			select * from PERSON where INITIALS is null and FORENAMES is not null;
+		]]>		
+	 	<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
 	<target name="scratch">
 		<!--
 			A scratchpad for ad hoc queries
@@ -173,7 +197,7 @@
 		<![CDATA[
 		
 			-- insert SQL here ...
-			delete from MENTIONS where SOURCE = 'LSGC'
+			select count(*) from PERSON
 		]]>		
 	 	<classpath refid="derby.path"/>
 		</sql>		
