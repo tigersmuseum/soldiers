@@ -100,6 +100,24 @@
 		</sql>		
 	</target>
 	
+	<target name="dates-lifespan">
+		<!--
+			There should be a sensible interval between birth and death ...
+		-->
+		<echo>${jdbc}</echo>
+		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+
+			select SID, SURNAME, INITIALS, BIRTH, DEATH from PERSON
+				where BIRTH is not null and DEATH is not NULL and (year(DEATH) - year(BIRTH) < 15 or year(DEATH) - year(BIRTH) > 100);
+
+			select SID, SURNAME, INITIALS, BORNAFTER, DEATH from PERSON
+				where BORNAFTER is not null and DEATH is not NULL and (year(DEATH) - year(BORNAFTER) < 15 or year(DEATH) - year(BORNAFTER) > 100);
+		]]>		
+	 	<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
 	<target name="dates-service-death">
 		<!--
 			We should make the date of death a lower bound for any service records
