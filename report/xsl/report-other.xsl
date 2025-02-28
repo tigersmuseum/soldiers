@@ -26,6 +26,13 @@
 </p>
 </xsl:template>
 
+<xsl:template match="source[@name = 'WOCL'][contains(.//soldiers:note[1], 'PRISONER')]" mode="other">
+<p class="other">
+	<h4><xsl:value-of select=".//soldiers:note[1]/@date"/> (War Office Casualty List)</h4>
+	<xsl:value-of select=".//soldiers:note[1]"/>.
+</p>
+</xsl:template>
+
 <xsl:template match="source" mode="other"/>
 
 </xsl:stylesheet>
