@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<xsl:stylesheet version="1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="office table text" >
+<xsl:stylesheet version="1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="office table text draw xlink" >
 
 <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
@@ -38,6 +38,7 @@
 	<xsl:apply-templates select="@office:value-type"/>
 	<xsl:apply-templates select="@table:number-columns-repeated"/>
 	<xsl:apply-templates select="." mode="text"/>
+	<xsl:apply-templates select=".//draw:image"/>
 </cell>
 </xsl:template>
 
@@ -66,6 +67,10 @@
 
 <xsl:template match="text()" mode="text">
 	<xsl:value-of select="."/>
+</xsl:template>
+
+<xsl:template match="draw:image[@xlink:href]">
+	<image href="{@xlink:href}"/>
 </xsl:template>
 
 </xsl:stylesheet>
