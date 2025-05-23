@@ -164,6 +164,21 @@
 		</sql>		
 	</target>
 	
+	<target name="number-space">
+		<!--
+			There is a space in the service number ...
+		-->
+		<echo>${jdbc}</echo>
+		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+
+			select P.SID, P.SURNAME, P.INITIALS, S.NUM  from PERSON P, SERVICE S 
+			where S.NUM like '% %' and P.SID = S.SID;
+		]]>		
+	 	<classpath refid="derby.path"/>
+		</sql>		
+	</target>
+	
 	<target name="duplicate-number-bracket">
 		<!--
 			Find entries with the same surname and service number upto the occurrence of a bracket ...
