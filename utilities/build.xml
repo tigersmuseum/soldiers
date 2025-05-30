@@ -34,14 +34,14 @@
 	
 	<target name="duplicates-name-death">
 		<!--
-		Find more than one entry with the same name and date of death
+		Find more than one entry with the same surname, intials and date of death
 		-->
 		<echo>${jdbc}</echo>
 		<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
 		<![CDATA[
 			
 		select P1.SID, P2.SID, P1.SURNAME, P1.INITIALS, S1.NUM, P2.SURNAME, P2.INITIALS, S2.NUM from SERVICE as S1, SERVICE as S2, PERSON as P1, PERSON as P2
-			where P1.SURNAME = P2.SURNAME and P1.INITIALS = P2.INITIALS and P1.FORENAMES = P2.FORENAMES and P1.DEATH = P2.DEATH
+			where P1.SURNAME = P2.SURNAME and P1.INITIALS = P2.INITIALS and P1.DEATH = P2.DEATH
 			and S1.SID = P1.SID and S2.SID = P2.SID
 			and P1.SID < P2.SID
 			
