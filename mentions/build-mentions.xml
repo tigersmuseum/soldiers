@@ -53,7 +53,7 @@
 		);
 		
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'RAW_MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0);
+		(NULL, 'RAW_MENTIONS', 'SID,SOURCE,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0);
 		
 		insert into MENTIONS
 			select distinct SID, SOURCE, ITEM_REF from RAW_MENTIONS;
