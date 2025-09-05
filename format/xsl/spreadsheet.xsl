@@ -27,7 +27,7 @@
 <row>
 	<xsl:attribute name="number"><xsl:value-of select="position() + sum(preceding-sibling::table:table-row/@table:number-rows-repeated) - count(preceding-sibling::table:table-row/@table:number-rows-repeated)"/></xsl:attribute>
 	<xsl:apply-templates select="@table:number-rows-repeated"/>
-	<xsl:apply-templates select="table:table-cell"/>
+	<xsl:apply-templates select="table:table-cell|table:covered-table-cell"/>
 </row>
 </xsl:template>
 
@@ -35,10 +35,18 @@
 <xsl:template match="table:table-cell">
 <cell>
 	<xsl:attribute name="index"><xsl:value-of select="position() + sum(preceding-sibling::table:table-cell/@table:number-columns-repeated) - count(preceding-sibling::table:table-cell/@table:number-columns-repeated)"/></xsl:attribute>
+	<xsl:apply-templates select="@table:number-columns-spanned"/>
+	<xsl:apply-templates select="@table:number-rows-spanned"/>
 	<xsl:apply-templates select="@office:value-type"/>
 	<xsl:apply-templates select="@table:number-columns-repeated"/>
 	<xsl:apply-templates select="." mode="text"/>
 	<xsl:apply-templates select=".//draw:image"/>
+</cell>
+</xsl:template>
+
+<xsl:template match="table:covered-table-cell">
+<cell type="covered">
+	<xsl:attribute name="index"><xsl:value-of select="position() + sum(preceding-sibling::table:table-cell/@table:number-columns-repeated) - count(preceding-sibling::table:table-cell/@table:number-columns-repeated)"/></xsl:attribute>
 </cell>
 </xsl:template>
 
@@ -71,6 +79,14 @@
 
 <xsl:template match="draw:image[@xlink:href]">
 	<image href="{@xlink:href}"/>
+</xsl:template>
+
+<xsl:template match="@table:number-columns-spanned">
+	<xsl:attribute name="cols"><xsl:value-of select="."/></xsl:attribute>
+</xsl:template>
+
+<xsl:template match="@table:number-rows-spanned">
+	<xsl:attribute name="rows"><xsl:value-of select="."/></xsl:attribute>
 </xsl:template>
 
 </xsl:stylesheet>
