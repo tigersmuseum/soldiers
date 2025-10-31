@@ -6,6 +6,7 @@
 <xsl:import href="report-cwgc.xsl"/>
 <xsl:import href="report-swb.xsl"/>
 <xsl:import href="report-web.xsl"/>
+<xsl:import href="report-memorial.xsl"/>
 <xsl:import href="report-other.xsl"/>
 <xsl:import href="report-medals.xsl"/>
 
@@ -46,6 +47,8 @@
 		<xsl:apply-templates select=".//source" mode="other"/>
 
 		<xsl:apply-templates select=".//source" mode="web"/>
+		
+		<xsl:apply-templates select=".//source" mode="warmemorial"/>
 		
 		<footer>
 			<p><xsl:text>WINHR: SID/</xsl:text><xsl:value-of select="@sid"/></p>
