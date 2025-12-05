@@ -1,6 +1,6 @@
 # Parsing mentions of Soldiers
 
-Source may be unstructured text or entries in spreadsheets. How spreadsheets are structured depends on the source and the trnascriber. There will be a lot of variety.
+Source may be unstructured text or entries in spreadsheets. How spreadsheets are structured depends on the source and the transcriber. There will be a lot of variety.
 
 The basic approach is to construct Soldiers XML, whatever the source.
 
@@ -30,13 +30,13 @@ This is supported directly by Open Office, and Microsoft Office has options to s
 
 XSL transforms - see ...
 Java code - see ...
-Judicious use of regular expressions in an edtor.
+Judicious use of regular expressions in an editor.
 
 ## Commonly encountered issues
 
 * The same field may hold either initials or forenames.
 
-The strategy here is to construct the Soldiers XML with either an *intials* or *forenames* element, then post process to decide what the contents
+The strategy here is to construct the Soldiers XML with either an *initials* or *forenames* element, then post process to decide what the contents
 are, renaming the element if appropriate. This can usually be done by "find and replace" with regular expressions in an editor.
 
 * Ranks are expressed in many different ways.
@@ -48,7 +48,7 @@ There will be transcription errors.
 
 # Regular expressions
 
-Some fixes can be made using find and replace in an editor that supports regular expressions:
+Some fixes can be made using 'find and replace'note in an editor that supports regular expressions:
 
 * Forenames in an initials field:
 
