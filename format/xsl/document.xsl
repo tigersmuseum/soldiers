@@ -63,6 +63,10 @@
 	<xsl:text> </xsl:text>
 </xsl:template>
 
+<xsl:template match="text:line-break">
+	<br/>
+</xsl:template>
+
 <xsl:template match="text:tab">
 	<!--  convert tab to 2 non-breaking spaces -->
 	<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;&nbsp;]]></xsl:text>
