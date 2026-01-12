@@ -22,7 +22,7 @@ input might be from a word processor document.
 Input might be from a spreadsheet.
 
 For input from a word processor or spreadsheet, the process is to convert the source to XML and then apply an XSL transform to create soldiers XML.
-We operate on the [Open Document Format for Office Applications (ODF)]()https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office.
+We operate on the [Open Document Format for Office Applications (ODF)](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office).
 This is supported directly by Open Office, and Microsoft Office has options to save documents and spreadsheets in these formats.
 
 
