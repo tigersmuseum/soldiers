@@ -72,6 +72,7 @@
 	<![CDATA[
 		
 		select count(*) as "TOTAL ROWS" from MENTIONS;
+		Select count(distinct(SID)) as "INDIVIDUAL SOLDIERS" from MENTIONS;
 		select source, count(*) as "MENTIONS" from MENTIONS group by source order by source;	
 	]]>
 	<classpath refid="derby.path"/>
