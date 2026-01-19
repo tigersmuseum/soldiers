@@ -48,7 +48,7 @@ There will be transcription errors.
 
 # Regular expressions
 
-Some fixes can be made using 'find and replace'note in an editor that supports regular expressions:
+Some fixes can be made using 'find and replace' in an editor that supports regular expressions:
 
 * Forenames in an initials field:
 
