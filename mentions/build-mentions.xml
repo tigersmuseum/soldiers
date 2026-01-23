@@ -7,7 +7,6 @@
 	</description>
 
 	<property file="../schema/derby/ant.properties"/>
-	<property file="ant.properties"/>
 
 	<path id="derby.path">
 		<pathelement location="${DERBY_HOME}/lib/derby.jar"/>
@@ -21,7 +20,7 @@
 	</target>
 	
 	<target name="make-mentions-csv">
-		<xslt in="${sources-list}" out="${source-data}/mentions.csv" style="xsl/sources-all.xsl" force="true"/>		
+		<xslt in="${sources-list}" out="${data-local}/mentions.csv" style="xsl/sources-all.xsl" force="true"/>		
 	</target>
 	
 	<target name="import-mentions">
@@ -53,7 +52,7 @@
 		);
 		
 		CALL SYSCS_UTIL.SYSCS_IMPORT_DATA
-		(NULL, 'RAW_MENTIONS', 'SID,SOURCE,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0);
+		(NULL, 'RAW_MENTIONS', 'SOURCE,SID,ITEM_REF', null, '${data-local}/mentions.csv', null, null, null, 0);
 		
 		insert into MENTIONS
 			select distinct SID, SOURCE, ITEM_REF from RAW_MENTIONS;
@@ -76,6 +75,16 @@
 		select source, count(*) as "MENTIONS" from MENTIONS group by source order by source;	
 	]]>
 	<classpath refid="derby.path"/>
+	</sql>		
+	</target>
+
+	<target name="export-mentions">
+	<sql driver="${driver}" url="${jdbc}" userid="${userid}" password="${password}" print="true" onerror="continue">	
+		<![CDATA[
+		CALL SYSCS_UTIL.SYSCS_EXPORT_QUERY
+		('select SOURCE, SID, ITEM_REF from MENTIONS', '${data-local}/mentions.csv', null, null, null);
+		]]>
+		<classpath refid="derby.path"/>
 	</sql>		
 	</target>
 	
