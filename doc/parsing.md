@@ -4,9 +4,16 @@ Source may be unstructured text or entries in spreadsheets. How spreadsheets are
 
 The basic approach is to construct Soldiers XML, whatever the source.
 
-XML data has the concepts of "well formed" and "valid". Well formed XML meets the minimum rules to make it parseable. It can be processed and analysed. Valid XML meets the fulfils all the rules of a particular type of XML, so that the right things are in the right fields, and expressed in the right way.
+XML data has the concepts of "well formed" and "valid". Well formed XML meets the minimum rules to make it parseable. It can be processed and analysed. Valid XML follows all the rules of a particular XML *schema*, so that the right things are in the right fields, and expressed in the right way. See the [schema for Soldiers XML](../schema/soldiers.xsd).
 
-We aim initially for well-formed XML from source material through pre-processing that depends on the source data.
+We aim initially for well-formed XML from source material through pre-processing that depends on the source data. 
+This can then be "cleaned up" to produce valid Soldiers XML that can be loaded to the database.
+The database itself may introduce constraints on the data that aren't defined in the schema.
+For instance, the *rank* attribute on a *service* element must be one of the rank abbreviations from the *RANK* table. See [rank.csv](../data/rank.csv).
+
+Soldiers XML includes a *note* element free to accept any content or attributes. The idea is that this allows source-specific information to be 
+captured for each *person* element. The contents of *note* do not get copied into the database, but may be retrieved later by processes creating
+biographical reports. The optional *MENTIONS* table is the database mechanism that supports this. See the [mentions](../mentions) folder for more detail.
 
 Some common features are:
 
