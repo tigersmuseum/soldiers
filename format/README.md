@@ -6,7 +6,7 @@ Information about soldiers comes from various sources in a various data formats.
 
 ## Preparing Data
 
-First, we need to create Soldiers XML. For example, by [extracting data from a spreadsheet](spreadsheet.md). Next, we need make sure that fields in the Soldiers XML are used in a consistent way that lets you compare them with the same fields in the database. This is [data normalization](normalization.md).
+First, we need to create Soldiers XML. For example, by extracting data from a [spreadsheet](spreadsheet.md) or word processor [document](document.md). Next, we need make sure that fields in the Soldiers XML are used in a consistent way that lets you compare them with the same fields in the database. This is [data normalization](normalization.md).
 
 ## Searching the database
 

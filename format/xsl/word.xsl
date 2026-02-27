@@ -57,32 +57,8 @@
 
 
 <xsl:template match="w:p">
-<p para="{position()}"><xsl:apply-templates mode="text"/></p>
+	<p><xsl:apply-templates mode="text"/></p>
 </xsl:template>
-
-<!--
-
-<xsl:template match="w:tc[w:tcPr/w:vMerge[not(@w:val = 'restart')]]">
-	<xsl:apply-templates select="preceding::w:tr" mode="repeat">
-		<xsl:with-param name="pos" select="count(preceding-sibling::w:tc) + 1"/>
-	</xsl:apply-templates>
-</xsl:template>
-
-<xsl:template match="w:tc[w:tcPr/w:vMerge[not(@w:val = 'restart')]]" mode="repeat">
-	<xsl:apply-templates select="w:p" mode="text"/>
-</xsl:template>
-
-<xsl:template match="w:tr" mode="repeat">
-	<xsl:param name="pos"/>
-<xsl:message><xsl:value-of select="$pos"/></xsl:message>
-	<xsl:apply-templates select="w:tc[position() = $pos]" mode="repeat"/>
-</xsl:template>
-
-<xsl:template match="w:tc[w:tcPr/w:vMerge[@w:val = 'restart']]" mode="repeat">
-	<xsl:apply-templates select="w:p" mode="text"/>
-</xsl:template>
-
--->
 
 <xsl:template match="w:tcPr/w:vMerge[not(@w:val = 'restart')]">
 	<xsl:apply-templates select="ancestor::w:tc[last()]" mode="repeat"/>
