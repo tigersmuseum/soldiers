@@ -50,17 +50,15 @@ are, renaming the element if appropriate. This can usually be done by "find and 
 * Initials may or may not have spaces between them, or be followed by full stops.
 * Only one forename might be known. A forename and middle initial(s) can be considered as forenames.
 
-
 There will be transcription errors.
 
 # Regular expressions
 
 Some fixes can be made using 'find and replace' in an editor that supports regular expressions:
 
-* Forenames in an initials field:
-
-	<initials>([A-Z][a-z]+\s*)+</initials>
-	<forenames>$1</forenames>
+Task | Find | Replace
+--- | --- | ---
+Forenames in an initials field | `<initials>([A-Z][a-z]+\s*)+</initials>` | `<forenames>$1</forenames>`
 
 Source material is transcribed to a list of Soldiers XML *person* elements, each of which represents a mention of the person in the source.
 A soldier is mentioned only once if the source material is a list of individuals, but other sources may mention the same soldier multiple times
@@ -75,14 +73,14 @@ We may have mentions that that can't be identified, but are similar enough to me
 There are judgements to be made about completeness and correctness in the database.
 
 We need to find close matches as well as exact matches in the database.
-We can search with a function that scores possible matches and set a threshold to determine whether to accept any match or not.
+We can search with a function that scores possible matches and set a threshold to determine whether to accept a match or not.
 We end up with a single match from the database, multiple acceptable matches from the database, or no match at all.
 
 We relate a mention to a database identifier by the inclusion of one or more *candidate* elements under the *person* element in the Soldiers XML.
 The mention is described as *unidentified*, *identified* or *ambiguous* if it has 0, 1 or many *candidate* elements respectively.
 
 We want to collect identified mentions by identity.
-If we're sure that two mentions identified as being by the same soldier really are the same, then we might want to merge the two mentions into one.
+If we're sure that two mentions identified as being about the same soldier really are the same, then we might want to merge the two mentions into one.
 
 Each mention typically includes a source-dependent *note* element that gives a source reference and perhaps some extra details.
 We might want to collect all the mentions for the same soldier together, so that there is a single *person* element with multiple *note* elements.
@@ -91,6 +89,9 @@ How sure we can be depends on context.
 Nothing is ever completely certain, so we should only do this if there is a way to undo it later if necessary. 
 Material from the same source may be split across more than one file.
 The same soldier may be mentioned in multiple files, so methods of collecting records for the same soldier may need to work across files.
+
+
+### Identifying and correcting transcription errors
 
 Searching against the database may produce a close match that suggests an error in transcribing from the historical source, an error in the database, or an error in the source material.
 The possibility of a transcription error can be checked if the mention contains a *note* allowing it to be tracked back to source.
