@@ -25,5 +25,5 @@ The result is that the conversion of Word files to XHTML via ODT creates a new H
 ### Indenting
 
 The generated XHTML is not indented. This makes it harder to read, or hand edit, if that's what you want to do. It's easy to make the output indented,
-but there's a risk of introducing unwanted whitespace. For example, introducing a space before a *<sup>* element.
+but there's a risk of introducing unwanted whitespace. For example, introducing a space before a `<sup>` element.
 XSLT utilities for "pretty printing" XHTML would be useful.

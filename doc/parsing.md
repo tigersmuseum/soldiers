@@ -44,7 +44,7 @@ Judicious use of regular expressions in an editor.
 * The same field may hold either initials or forenames.
 
 The strategy here is to construct the Soldiers XML with either an *initials* or *forenames* element, then post process to decide what the contents
-are, renaming the element if appropriate. This can usually be done by "find and replace" with regular expressions in an editor.
+are, renaming the element if appropriate. This can usually be done by "find and replace" with regular expressions in an editor. See below.
 
 * Ranks are expressed in many different ways.
 * Initials may or may not have spaces between them, or be followed by full stops.
@@ -52,13 +52,13 @@ are, renaming the element if appropriate. This can usually be done by "find and 
 
 There will be transcription errors.
 
-# Regular expressions
+### Regular expressions
 
 Some fixes can be made using 'find and replace' in an editor that supports regular expressions:
 
-Task | Find | Replace
+issue | find | replace
 --- | --- | ---
-Forenames in an initials field | `<initials>([A-Z][a-z]+\s*)+</initials>` | `<forenames>$1</forenames>`
+forenames in an initials field | `<initials>([A-Z][a-z]+\s*)+</initials>` | `<forenames>$1</forenames>`
 
 Source material is transcribed to a list of Soldiers XML *person* elements, each of which represents a mention of the person in the source.
 A soldier is mentioned only once if the source material is a list of individuals, but other sources may mention the same soldier multiple times
@@ -91,7 +91,7 @@ Material from the same source may be split across more than one file.
 The same soldier may be mentioned in multiple files, so methods of collecting records for the same soldier may need to work across files.
 
 
-### Identifying and correcting transcription errors
+### Identifying and correcting errors
 
 Searching against the database may produce a close match that suggests an error in transcribing from the historical source, an error in the database, or an error in the source material.
 The possibility of a transcription error can be checked if the mention contains a *note* allowing it to be tracked back to source.
